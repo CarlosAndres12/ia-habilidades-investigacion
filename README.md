@@ -100,11 +100,25 @@ node tools/generate-voiceover.mjs --dry-run
 
 Muestra cada video frente a su objetivo (`target`), las escenas más largas y los caracteres facturables. Para alargar una escena sin voz, suba su `min` en la especificación §11 (o en `js/data/videos.js`); para acortarla, acorte sus líneas.
 
-## 4. Regenerar las voces con Azure AI Speech (plan gratuito F0)
+## 4. Regenerar las voces
 
-Las voces del sitio se generan con **Azure AI Speech**. Sin audio generado, el sitio usa la voz del navegador (aparece la nota «Voz del navegador»); todo funciona igual.
+Las voces publicadas se generaron con **Edge TTS**, las voces de lectura en voz alta de Microsoft Edge: son gratuitas y no piden clave. La herramienta también puede usar **Azure AI Speech** (plan gratuito F0, con clave). Sin audio generado, el sitio usa la voz del navegador (aparece la nota «Voz del navegador»); todo funciona igual.
 
-### 4.1 Crear el recurso (una sola vez)
+### 4.0 Con Edge TTS (sin clave; es la opción configurada)
+
+Necesita el paquete de Python `edge-tts` (`pip install edge-tts`, o `uv tool install edge-tts`; con `uv` instalado la herramienta lo obtiene sola) y conexión a internet. No hace falta `npm install`.
+
+```
+cd tools
+node generate-voiceover.mjs                   # sintetiza todo (o --only v4 para un video)
+```
+
+- `tools/voice.config.json` dice `"engine": "edge"`; las voces del reparto son las mismas que en Azure. `--engine azure` (o `"engine": "azure"`) vuelve a Azure.
+- Edge solo recibe texto: los alias del léxico se leen igual, los «…» se vuelven una pausa corta (coma) y el tono (`pitch`) se convierte de porcentaje a hercios. Los tiempos de los subtítulos salen de los límites de palabra que devuelve Edge.
+- Es un servicio en línea sin garantía de servicio: si falla, la herramienta reintenta; vuelva a ejecutar y solo se sintetizan las líneas que faltan (caché en `tools/.cache/`).
+- `--voice-test` también funciona con Edge.
+
+### 4.1 Con Azure: crear el recurso (una sola vez)
 
 1. En el portal de Azure, cree un recurso **Azure Speech** (hoy se ofrece dentro de Microsoft Foundry como «Azure Speech in Foundry Tools») con el plan de precios **Free F0**.
 2. Copie su **clave** y su **región** (por ejemplo, `eastus`).
@@ -161,7 +175,7 @@ Los datos, los dibujos del curso (`js/course/`) y los videos (`js/videos/`) no c
 | `tools/check-figures.mjs` | trazabilidad de cifras y enunciados prohibidos (debe dar 0 errores) |
 | `tools/check-style.mjs` | aislamiento del estilo, paleta, contraste y leyenda (debe dar 0 errores) |
 | `tools/check-links.mjs` | enlaces (debe dar 0 errores) |
-| `tools/generate-voiceover.mjs` | voces (Azure AI Speech, F0) |
+| `tools/generate-voiceover.mjs` | voces (Edge TTS sin clave, o Azure AI Speech F0) |
 | `tools/render-videos.mjs` | exportación opcional a MP4 |
 | `tools/dev/build-content.mjs`, `tools/dev/build-data.mjs` | generan `js/data/` desde el programa del curso y la especificación |
 | `tools/dev/build-index.mjs` | reescribe `index.html` cuando se agregan o quitan archivos de `js/` |

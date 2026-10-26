@@ -1,0 +1,223 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:04.667
+¿Cómo trabajar con un agente en su propio computador sin poner en riesgo sus
+
+00:00:04.667 --> 00:00:06.199
+archivos?
+
+00:00:06.199 --> 00:00:10.778
+En este laboratorio va a organizar, documentar y analizar una carpeta,
+
+00:00:10.778 --> 00:00:14.735
+sin escribir código y verificando cada resultado.
+
+00:00:16.535 --> 00:00:22.735
+Hay tres opciones de suscripción: OpenCode Go, Claude Pro o ChatGPT Plus.
+
+00:00:22.735 --> 00:00:26.778
+Sus precios de octubre de 2026 están en estas tarjetas:
+
+00:00:26.778 --> 00:00:29.496
+revíselos antes de contratar.
+
+00:00:29.996 --> 00:00:33.834
+Se usan sin programar: la app de escritorio de OpenCode,
+
+00:00:33.834 --> 00:00:38.031
+la pestaña Code de Claude o el modo Codex de ChatGPT.
+
+00:00:38.031 --> 00:00:42.253
+Y si usa Antigravity, cuyas condiciones también están en la tarjeta,
+
+00:00:42.253 --> 00:00:45.140
+hágalo solo con aprobación manual.
+
+00:00:46.940 --> 00:00:51.522
+<v Tomás>Habrá una sala por herramienta, cada una con un monitor.
+
+00:00:51.522 --> 00:00:55.678
+<v Tomás>Si necesita ayuda, comparta su pantalla dentro de la sala:
+
+00:00:55.678 --> 00:00:59.900
+<v Tomás>nadie toma el control remoto del equipo de otra persona.
+
+00:01:00.400 --> 00:01:05.848
+<v Tomás>Reacción verde: voy bien; mano levantada: necesito ayuda.
+
+00:01:05.848 --> 00:01:10.457
+<v Tomás>Y si se cae la conexión, el agente sigue trabajando en su computador:
+
+00:01:10.457 --> 00:01:12.783
+<v Tomás>vuelva a la misma sala.
+
+00:01:14.583 --> 00:01:16.585
+Según el programa del curso,
+
+00:01:16.585 --> 00:01:21.598
+la carpeta lab-ia trae 10 artículos en PDF de acceso abierto sobre informalidad
+
+00:01:21.598 --> 00:01:22.414
+laboral,
+
+00:01:22.414 --> 00:01:25.502
+un CSV del DANE con indicadores por ciudad,
+
+00:01:25.502 --> 00:01:31.287
+3 transcripciones de entrevistas sintéticas y un archivo AGENTS.md.
+
+00:01:31.787 --> 00:01:35.371
+Trabaje siempre sobre la copia que descomprimió en Documentos,
+
+00:01:35.371 --> 00:01:37.667
+nunca sobre el original.
+
+00:01:39.467 --> 00:01:41.903
+Abra el agente en esa carpeta y confirme
+
+00:01:41.903 --> 00:01:45.820
+que está en aprobación manual o en modo de planificación.
+
+00:01:45.820 --> 00:01:50.258
+La primera instrucción es de solo lectura: listar, describir y proponer,
+
+00:01:50.258 --> 00:01:52.235
+sin cambiar nada.
+
+00:01:52.735 --> 00:01:55.196
+Es el principio de mínimo privilegio:
+
+00:01:55.196 --> 00:01:59.368
+el agente tiene solo los permisos que la tarea necesita.
+
+00:01:59.368 --> 00:02:04.375
+Y así usted revisa la propuesta del agente antes de que este toque algo.
+
+00:02:06.175 --> 00:02:10.907
+En la parte de literatura, el agente mueve los PDF a una carpeta,
+
+00:02:10.907 --> 00:02:17.157
+los renombra y crea una matriz con archivo, autores, año, título, fuente, pregunta,
+
+00:02:17.157 --> 00:02:20.431
+método, datos y hallazgo principal.
+
+00:02:20.931 --> 00:02:27.602
+Si un dato no aparece en el PDF, escribe «no encontrado»: no se imputa sin método.
+
+00:02:27.602 --> 00:02:31.011
+Y antes de ejecutar, le muestra el plan.
+
+00:02:31.511 --> 00:02:33.857
+Usted abre tres PDF al azar,
+
+00:02:33.857 --> 00:02:38.258
+los compara con sus filas y anota en la bitácora el tipo de error: omisión,
+
+00:02:38.258 --> 00:02:41.327
+invención o mala lectura del método.
+
+00:02:43.127 --> 00:02:48.088
+Con los indicadores del DANE, pida describir variables, revisar faltantes,
+
+00:02:48.088 --> 00:02:53.472
+calcular descriptivos y hacer dos gráficos, con una condición: antes de ejecutar,
+
+00:02:53.472 --> 00:02:58.727
+el agente lista las decisiones de análisis y espera a que usted las apruebe.
+
+00:02:59.227 --> 00:03:05.056
+Esas decisiones, sobre faltantes, atípicos y exclusiones, son de quien investiga,
+
+00:03:05.056 --> 00:03:06.778
+no del agente.
+
+00:03:06.778 --> 00:03:09.610
+Todo queda como script en la carpeta «analisis»,
+
+00:03:09.610 --> 00:03:13.171
+con un archivo LEEME que explica cada paso.
+
+00:03:13.671 --> 00:03:14.704
+Verifique:
+
+00:03:14.704 --> 00:03:18.173
+calcule usted el promedio o el máximo en una hoja de cálculo
+
+00:03:18.173 --> 00:03:20.751
+y compárelo con el del agente.
+
+00:03:22.551 --> 00:03:24.451
+Al empezar, Codex,
+
+00:03:24.451 --> 00:03:30.243
+OpenCode y Claude Code leen un archivo AGENTS.md con las reglas del proyecto.
+
+00:03:30.243 --> 00:03:33.138
+El del curso le pide al agente, por ejemplo,
+
+00:03:33.138 --> 00:03:37.671
+no borrar nunca archivos y mover a la carpeta «revisar» lo que sobre.
+
+00:03:38.171 --> 00:03:41.257
+También le pide no inventar datos ni referencias,
+
+00:03:41.257 --> 00:03:46.066
+guardar todo análisis como script reproducible y, antes de cambios grandes,
+
+00:03:46.066 --> 00:03:49.067
+mostrar el plan y esperar aprobación.
+
+00:03:50.867 --> 00:03:51.708
+Luego,
+
+00:03:51.708 --> 00:03:55.777
+el diseño de la skill de la cuarta sesión se vuelve una carpeta con un archivo
+
+00:03:55.777 --> 00:03:57.231
+SKILL.md:
+
+00:03:57.231 --> 00:04:01.907
+la ficha de artículo, que pide la página de cada dato extraído.
+
+00:04:02.407 --> 00:04:07.878
+AGENTS.md y las skills convierten reglas implícitas en un protocolo explícito,
+
+00:04:07.878 --> 00:04:10.646
+que se puede revisar, versionar y publicar;
+
+00:04:10.646 --> 00:04:14.911
+pedir la página de cada dato hace verificable la extracción.
+
+00:04:16.711 --> 00:04:19.599
+<v Mariana>Le pedí al agente que resumiera todo lo que cambió,
+
+00:04:19.599 --> 00:04:22.207
+<v Mariana>y su resumen ya me dice qué hizo.
+
+00:04:22.557 --> 00:04:25.978
+<v Tomás>Compáralo con la carpeta, archivo por archivo:
+
+00:04:25.978 --> 00:04:30.896
+<v Tomás>si algo cambió y el resumen no lo dice, la carpeta lo muestra.
+
+00:04:30.896 --> 00:04:34.413
+<v Tomás>La prueba es la carpeta, no el resumen.
+
+00:04:34.763 --> 00:04:37.735
+Registre la sesión en la bitácora.
+
+00:04:37.735 --> 00:04:39.241
+En la plenaria final,
+
+00:04:39.241 --> 00:04:42.761
+una persona por sala cuenta en un minuto qué usaría en su proyecto
+
+00:04:42.761 --> 00:04:44.843
+y qué no delegaría.
+
+00:04:52.643 --> 00:04:56.954
+El resumen que un agente hace de su propio trabajo puede ser incompleto:
+
+00:04:56.954 --> 00:05:00.275
+la prueba es la carpeta, no el resumen.

@@ -1,0 +1,355 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:02.615
+Un chat responde.
+
+00:00:02.615 --> 00:00:05.497
+Un agente recibe un objetivo, planea,
+
+00:00:05.497 --> 00:00:10.176
+usa herramientas en el computador o en la nube y repite hasta terminar.
+
+00:00:10.676 --> 00:00:13.136
+Por eso es más útil y más riesgoso,
+
+00:00:13.136 --> 00:00:16.121
+y plantea preguntas nuevas sobre responsabilidad,
+
+00:00:16.121 --> 00:00:19.532
+trazabilidad e integridad de la investigación.
+
+00:00:21.332 --> 00:00:26.638
+Un chat recibe una pregunta y responde con texto: usted copia y pega.
+
+00:00:26.638 --> 00:00:29.291
+Un asistente con herramientas busca en la web,
+
+00:00:29.291 --> 00:00:32.852
+lee archivos o ejecuta código para responder.
+
+00:00:33.352 --> 00:00:38.555
+Un agente recibe un objetivo y actúa sobre archivos, programas o páginas web:
+
+00:00:38.555 --> 00:00:44.272
+planea pasos, usa herramientas, revisa resultados y corrige hasta terminar.
+
+00:00:44.772 --> 00:00:46.416
+Con el caso del curso:
+
+00:00:46.416 --> 00:00:50.089
+«¿Qué es la informalidad laboral?» es una pregunta para un chat;
+
+00:00:50.089 --> 00:00:56.196
+organizar 30 PDF y escribir una síntesis comparativa es tarea de un agente.
+
+00:00:57.996 --> 00:01:03.238
+El ciclo empieza con la persona, que define qué quiere y con qué límites.
+
+00:01:03.238 --> 00:01:05.610
+El agente divide la tarea en pasos,
+
+00:01:05.610 --> 00:01:09.396
+usa herramientas y lee el resultado de cada acción.
+
+00:01:09.896 --> 00:01:15.342
+Si el resultado no cumple el objetivo, el agente ajusta el plan y repite.
+
+00:01:15.342 --> 00:01:19.328
+La persona aprueba lo irreversible y revisa la entrega.
+
+00:01:21.128 --> 00:01:24.800
+Anthropic distingue dos cosas: los flujos de trabajo,
+
+00:01:24.800 --> 00:01:30.783
+donde una persona fija los pasos, y los agentes, donde el modelo define el proceso.
+
+00:01:30.783 --> 00:01:34.952
+Y aconseja empezar por la solución más simple que funcione.
+
+00:01:35.452 --> 00:01:41.306
+En investigación, muchas tareas salen mejor como un flujo con puntos de control.
+
+00:01:41.306 --> 00:01:46.217
+Y el contexto es un presupuesto: el agente rinde más con un objetivo claro,
+
+00:01:46.217 --> 00:01:50.140
+una carpeta ordenada y un archivo de instrucciones.
+
+00:01:51.940 --> 00:01:55.166
+Delegar la ejecución no delega la responsabilidad:
+
+00:01:55.166 --> 00:01:59.788
+quien investiga responde por cada paso que el agente dio en su nombre.
+
+00:02:00.288 --> 00:02:04.024
+Un agente orientado a cumplir un objetivo puede tomar atajos:
+
+00:02:04.024 --> 00:02:06.460
+ajustar un análisis hasta que funcione,
+
+00:02:06.460 --> 00:02:10.568
+omitir casos que dan error o rellenar datos faltantes.
+
+00:02:10.568 --> 00:02:14.016
+Exija scripts y verifique las cifras clave.
+
+00:02:14.516 --> 00:02:17.869
+Y guarde el registro de la sesión, con instrucciones,
+
+00:02:17.869 --> 00:02:23.228
+comandos y archivos modificados: es la huella de auditoría del análisis.
+
+00:02:31.028 --> 00:02:34.228
+El mismo tipo de agente puede vivir en un chat web,
+
+00:02:34.228 --> 00:02:37.200
+en una app de escritorio que trabaja sobre carpetas,
+
+00:02:37.200 --> 00:02:40.316
+en la terminal o en un editor de código.
+
+00:02:40.816 --> 00:02:42.498
+También en el navegador,
+
+00:02:42.498 --> 00:02:46.809
+donde es mayor el riesgo de que una página esconda instrucciones para el agente,
+
+00:02:46.809 --> 00:02:49.884
+o en la nube, para tareas largas.
+
+00:02:49.884 --> 00:02:53.968
+El lugar define qué puede tocar y por dónde pasan los datos.
+
+00:02:55.767 --> 00:02:57.259
+Lo aprendido se transfiere
+
+00:02:57.259 --> 00:03:00.766
+porque las herramientas comparten tres estándares abiertos:
+
+00:03:00.766 --> 00:03:07.029
+AGENTS.md, el archivo de instrucciones; Agent Skills, el formato de las skills;
+
+00:03:07.029 --> 00:03:12.664
+y MCP, el protocolo para conectar agentes con herramientas y datos.
+
+00:03:13.164 --> 00:03:17.703
+Así, sus instrucciones y protocolos pasan de una herramienta a otra:
+
+00:03:17.703 --> 00:03:20.844
+el método no queda atado a un proveedor.
+
+00:03:22.643 --> 00:03:26.928
+Un agente que corre en su computador con un modelo en la nube envía al proveedor el
+
+00:03:26.928 --> 00:03:29.646
+contenido de los archivos que lee.
+
+00:03:29.646 --> 00:03:34.091
+Solo con un modelo local los datos no salen de su computador.
+
+00:03:34.591 --> 00:03:37.205
+Revise además las políticas de su universidad
+
+00:03:37.205 --> 00:03:42.103
+y las condiciones de su financiador sobre dónde pueden alojarse los datos.
+
+00:03:43.903 --> 00:03:46.785
+Un agente rinde más en tareas repetitivas,
+
+00:03:46.785 --> 00:03:50.421
+con criterios claros y un resultado verificable.
+
+00:03:50.421 --> 00:03:54.210
+Por ejemplo: organizar PDF y extraer metadatos,
+
+00:03:54.210 --> 00:03:56.965
+limpiar una base con un script reproducible,
+
+00:03:56.965 --> 00:04:01.135
+o hacer una primera codificación con un libro de códigos.
+
+00:04:01.635 --> 00:04:06.651
+También revisar un cuestionario o pasar notas a un borrador estructurado.
+
+00:04:08.451 --> 00:04:13.093
+En la demostración del curso, el agente trabaja en modo de planificación:
+
+00:04:13.093 --> 00:04:18.315
+primero lista la carpeta y propone cómo organizarla, sin cambiar nada.
+
+00:04:18.815 --> 00:04:23.050
+El grupo lee el plan y lo aprueba o lo rechaza por encuesta.
+
+00:04:23.050 --> 00:04:26.303
+Luego el agente extrae autor, año, título,
+
+00:04:26.303 --> 00:04:30.503
+método y hallazgo principal de cada PDF a una tabla.
+
+00:04:31.003 --> 00:04:34.969
+Se verifican dos filas frente a los PDF, en pantalla,
+
+00:04:34.969 --> 00:04:39.883
+y se explica cada permiso que pide el agente: qué se está aprobando.
+
+00:04:41.683 --> 00:04:46.274
+Un agente que escribe y ejecuta scripts deja un análisis reproducible,
+
+00:04:46.274 --> 00:04:51.798
+mejor documentado que una serie de clics, siempre que alguien revise el script.
+
+00:04:51.798 --> 00:04:54.923
+Y la primera codificación automática es un insumo:
+
+00:04:54.923 --> 00:04:58.075
+la interpretación sigue siendo de usted.
+
+00:04:58.575 --> 00:05:02.490
+Para quienes están en formación, delegar todo tiene un costo:
+
+00:05:02.490 --> 00:05:06.968
+en un ensayo publicado en PNAS, con estudiantes de secundaria,
+
+00:05:06.968 --> 00:05:13.001
+el acceso a GPT-4 sin guía los dejó 17 % por debajo del grupo de control al retirar
+
+00:05:13.001 --> 00:05:14.679
+la herramienta.
+
+00:05:16.479 --> 00:05:22.308
+En su computador, un agente puede hacer lo mismo que usted: leer, modificar, borrar,
+
+00:05:22.308 --> 00:05:24.298
+instalar y enviar.
+
+00:05:24.298 --> 00:05:27.296
+El riesgo ya no es solo una respuesta equivocada:
+
+00:05:27.296 --> 00:05:30.279
+también puede ser una acción equivocada.
+
+00:05:30.779 --> 00:05:35.294
+Por eso: carpeta dedicada, copia de respaldo y aprobación manual;
+
+00:05:35.294 --> 00:05:38.763
+anonimizar y usar modelos locales para datos sensibles;
+
+00:05:38.763 --> 00:05:43.043
+exigir scripts reproducibles y fijar límites de gasto.
+
+00:05:44.843 --> 00:05:47.471
+Los casos reales enseñan.
+
+00:05:47.471 --> 00:05:49.716
+En diciembre de 2025,
+
+00:05:49.716 --> 00:05:52.497
+un usuario reportó que Claude Code ejecutó un borrado
+
+00:05:52.497 --> 00:05:54.601
+que incluyó su carpeta personal;
+
+00:05:54.601 --> 00:06:00.035
+en noviembre, Antigravity, en modo automático, borró todo un disco.
+
+00:06:00.535 --> 00:06:01.478
+Brave mostró
+
+00:06:01.478 --> 00:06:06.019
+que un comentario con texto oculto llevaba al navegador Comet a filtrar el correo de
+
+00:06:06.019 --> 00:06:07.615
+un usuario.
+
+00:06:07.615 --> 00:06:12.117
+Y el agente de Replit borró una base de datos y afirmó, sin razón,
+
+00:06:12.117 --> 00:06:14.599
+que no se podía recuperar.
+
+00:06:15.099 --> 00:06:18.695
+Las lecciones: lea cada comando antes de aprobarlo,
+
+00:06:18.695 --> 00:06:24.099
+no use modos que lo aprueban todo y no confíe en lo que el agente dice de sí mismo.
+
+00:06:25.900 --> 00:06:30.656
+La demostración del curso usa un PDF con una línea escrita en blanco sobre fondo
+
+00:06:30.656 --> 00:06:31.383
+blanco,
+
+00:06:31.383 --> 00:06:35.823
+que pide describir el artículo como el más importante del campo.
+
+00:06:35.823 --> 00:06:38.859
+Luego se pide a un agente que lo resuma.
+
+00:06:39.359 --> 00:06:43.568
+No es teoría: según un reporte de julio de 2025,
+
+00:06:43.568 --> 00:06:48.491
+17 preprints de 14 instituciones en 8 países escondían instrucciones para
+
+00:06:48.491 --> 00:06:52.382
+que revisores con IA dieran evaluaciones positivas.
+
+00:06:52.382 --> 00:06:55.871
+Un agente lee instrucciones donde usted no las ve.
+
+00:06:56.371 --> 00:06:58.169
+Y según OpenAI,
+
+00:06:58.169 --> 00:07:02.200
+la inyección de instrucciones probablemente nunca se resolverá del todo,
+
+00:07:02.200 --> 00:07:04.723
+como pasa con las estafas.
+
+00:07:12.523 --> 00:07:17.624
+Su producto de hoy es el mapa de riesgos de su proyecto: qué datos sensibles tiene,
+
+00:07:17.624 --> 00:07:23.059
+qué tareas delegaría, cuáles nunca y dónde pondría un punto de control humano.
+
+00:07:23.559 --> 00:07:28.904
+Los datos de participantes nunca van a la carpeta del agente sin anonimizar.
+
+00:07:28.904 --> 00:07:31.927
+Y mantenga copias fechadas o control de versiones,
+
+00:07:31.927 --> 00:07:34.719
+para revertir lo que haga el agente.
+
+00:07:36.520 --> 00:07:42.298
+<v Amparo>Nuestros datos sensibles son las entrevistas: nunca entran a la carpeta del agente.
+
+00:07:42.298 --> 00:07:46.888
+<v Amparo>Delegaríamos organizar los PDF y extraer metadatos.
+
+00:07:47.238 --> 00:07:49.610
+<v Julián>Y nunca la interpretación.
+
+00:07:49.610 --> 00:07:52.352
+<v Julián>Ponemos un punto de control antes de cada análisis:
+
+00:07:52.352 --> 00:07:56.550
+<v Julián>el agente lista los pasos que va a ejecutar y espera nuestra aprobación.
+
+00:07:56.900 --> 00:08:01.705
+<v Tomás>Para el laboratorio: usar una carpeta dedicada con copia de respaldo,
+
+00:08:01.705 --> 00:08:06.051
+<v Tomás>leer cada permiso y compartir solo la ventana del agente.
+
+00:08:06.051 --> 00:08:08.732
+<v Tomás>Todo está en la lista de chequeo.
+
+00:08:16.532 --> 00:08:19.502
+Un agente es más útil que un chat porque actúa,
+
+00:08:19.502 --> 00:08:22.552
+y por la misma razón es más riesgoso.
+
+00:08:22.552 --> 00:08:26.516
+Delegar la ejecución no delega la responsabilidad.

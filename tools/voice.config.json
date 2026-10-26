@@ -1,5 +1,13 @@
 {
-  "engine": "azure",
+  "engine": "edge",
+  "edge": {
+    "_comment": "Edge TTS: free read-aloud voices, no key (lib/tts-edge.mjs). \"engine\": \"azure\" goes back to Azure F0.",
+    "rateLimit": {
+      "requests": 30,
+      "perSeconds": 60,
+      "concurrency": 1
+    }
+  },
   "tier": "F0",
   "regionEnv": "AZURE_SPEECH_REGION",
   "keyEnv": "AZURE_SPEECH_KEY",

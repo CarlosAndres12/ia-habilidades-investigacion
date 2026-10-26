@@ -1,0 +1,220 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:03.826
+¿Se puede construir una matriz de antecedentes verificada
+
+00:00:03.826 --> 00:00:08.061
+y un análisis preliminar solo con herramientas gratuitas?
+
+00:00:08.061 --> 00:00:13.224
+Sí, siempre que documente el proceso para poder repetirlo y declararlo.
+
+00:00:15.024 --> 00:00:19.577
+Para buscar: Asta, Consensus y Google Scholar Labs.
+
+00:00:19.577 --> 00:00:23.238
+Para mapear: Connected Papers o ResearchRabbit.
+
+00:00:23.238 --> 00:00:28.488
+Para leer y sintetizar con citas a sus fuentes: Gemini Notebook.
+
+00:00:28.988 --> 00:00:31.564
+Para extraer: Elicit.
+
+00:00:31.564 --> 00:00:37.725
+Para analizar datos: Asta DataVoyager o los planes gratuitos de Claude o ChatGPT.
+
+00:00:37.725 --> 00:00:41.054
+Para datos sensibles, un modelo local.
+
+00:00:41.054 --> 00:00:43.720
+Y Zotero para las referencias.
+
+00:00:43.720 --> 00:00:47.348
+Los límites de cada plan están en las tarjetas.
+
+00:00:49.148 --> 00:00:50.856
+En los planes gratuitos,
+
+00:00:50.856 --> 00:00:55.154
+las conversaciones suelen usarse para mejorar los modelos y, a veces,
+
+00:00:55.154 --> 00:01:00.932
+las leen revisores humanos: nunca suba allí datos personales o confidenciales.
+
+00:01:01.432 --> 00:01:04.262
+Y como cambian límites y modelos sin aviso,
+
+00:01:04.262 --> 00:01:09.928
+guarde con fecha las salidas importantes: exportaciones, capturas y código.
+
+00:01:11.728 --> 00:01:14.495
+La parte A tiene cinco pasos.
+
+00:01:14.495 --> 00:01:20.707
+Primero, la pregunta estructurada: población, fenómeno, resultado y contexto.
+
+00:01:20.707 --> 00:01:24.393
+El ejemplo del curso: en trabajadores urbanos de Colombia,
+
+00:01:24.393 --> 00:01:28.998
+¿cómo afecta el aumento del salario mínimo a la informalidad laboral entre 2010 y
+
+00:01:28.998 --> 00:01:31.072
+2025?
+
+00:01:31.572 --> 00:01:37.323
+Tiene 5 minutos para revisarla; luego vienen buscar, mapear, leer con fuentes y,
+
+00:01:37.323 --> 00:01:40.476
+por último, extraer y verificar.
+
+00:01:42.276 --> 00:01:48.143
+Busque la misma pregunta en Asta y en Consensus, y en inglés en Google Scholar Labs.
+
+00:01:48.143 --> 00:01:52.212
+Registre consulta, fecha y resultados: con esa bitácora,
+
+00:01:52.212 --> 00:01:55.428
+otra persona podría repetir la búsqueda.
+
+00:01:55.928 --> 00:01:57.853
+Con el artículo más citado,
+
+00:01:57.853 --> 00:01:59.562
+abra un grafo en Connected Papers
+
+00:01:59.562 --> 00:02:04.112
+y revise los trabajos fundacionales y las revisiones recientes.
+
+00:02:05.911 --> 00:02:09.890
+Cargue sus 5 a 8 PDF en un cuaderno de Gemini Notebook
+
+00:02:09.890 --> 00:02:14.738
+y pregunte qué métodos usan los estudios y en qué coinciden y difieren.
+
+00:02:14.738 --> 00:02:18.968
+Pida además que cite el pasaje que respalda cada afirmación.
+
+00:02:19.468 --> 00:02:24.417
+Recuerde: la síntesis es tan buena como los documentos cargados.
+
+00:02:24.417 --> 00:02:29.667
+Si deja fuera estudios clave, la conclusión hereda un sesgo de selección.
+
+00:02:31.467 --> 00:02:32.500
+Por último,
+
+00:02:32.500 --> 00:02:37.845
+llene la matriz de antecedentes y verifique tres filas con el protocolo del curso.
+
+00:02:37.845 --> 00:02:41.429
+La columna «¿Verificada?» es evidencia de su control de calidad
+
+00:02:41.429 --> 00:02:44.787
+y alimenta su declaración de uso de IA.
+
+00:02:46.587 --> 00:02:49.457
+La parte B tiene tres rutas.
+
+00:02:49.457 --> 00:02:53.539
+En la primera, la de datos cuantitativos sin información personal,
+
+00:02:53.539 --> 00:02:57.901
+suba el CSV del DANE a Asta DataVoyager o a un chat gratuito,
+
+00:02:57.901 --> 00:03:01.971
+verifique a mano una cifra y guarde código y gráficos.
+
+00:03:02.471 --> 00:03:07.024
+Revise la sección de métodos o el código línea por línea antes de usarlos:
+
+00:03:07.024 --> 00:03:10.031
+describen decisiones que usted firma.
+
+00:03:11.831 --> 00:03:16.052
+En la segunda ruta, con entrevistas sintéticas o anonimizadas,
+
+00:03:16.052 --> 00:03:18.450
+entregue un libro de 4 a 6 códigos
+
+00:03:18.450 --> 00:03:23.951
+y pida una primera codificación con la cita exacta que justifica cada código.
+
+00:03:24.451 --> 00:03:26.887
+Luego codifique usted a mano una entrevista
+
+00:03:26.887 --> 00:03:31.198
+y calcule en qué porcentaje de fragmentos coinciden las dos codificaciones;
+
+00:03:31.198 --> 00:03:35.419
+si tiene más tiempo, calcule también la kappa de Cohen.
+
+00:03:35.919 --> 00:03:41.263
+La IA tiende a codificaciones literales y pierde ironías, contexto y silencios:
+
+00:03:41.263 --> 00:03:44.367
+el libro de códigos se ajusta en rondas.
+
+00:03:46.167 --> 00:03:49.138
+En la tercera ruta, para datos sensibles,
+
+00:03:49.138 --> 00:03:54.649
+la misma tarea corre con LM Studio u Ollama y un modelo pequeño de pesos abiertos,
+
+00:03:54.649 --> 00:03:58.671
+sin internet: los datos no salen del computador.
+
+00:03:59.171 --> 00:04:01.135
+Según el programa del curso,
+
+00:04:01.135 --> 00:04:06.619
+con 16 GB de RAM sirven modelos de 8.000 a 12.000 millones de parámetros;
+
+00:04:06.619 --> 00:04:09.911
+los tamaños de descarga están en la tarjeta.
+
+00:04:09.911 --> 00:04:12.851
+Descargue el modelo antes de clase.
+
+00:04:13.351 --> 00:04:18.466
+En Ollama, los modelos marcados como «cloud» no corren en su computador.
+
+00:04:18.466 --> 00:04:23.191
+Y un modelo pequeño se equivoca más: valide con más cuidado.
+
+00:04:24.991 --> 00:04:28.320
+<v Julián>Yo sigo la ruta de datos cuantitativos con el archivo del DANE,
+
+00:04:28.320 --> 00:04:31.111
+<v Julián>y verifico a mano la tasa de una ciudad.
+
+00:04:31.461 --> 00:04:35.499
+<v Mariana>Yo le pido a la IA una primera codificación de las entrevistas sintéticas
+
+00:04:35.499 --> 00:04:37.586
+<v Mariana>y la comparo con la mía.
+
+00:04:37.586 --> 00:04:42.286
+<v Mariana>Si el acuerdo no alcanza el umbral que fijamos, ajusto el libro de códigos,
+
+00:04:42.286 --> 00:04:45.381
+<v Mariana>no la instrucción para forzar el resultado.
+
+00:04:45.732 --> 00:04:50.464
+<v Amparo>Y las entrevistas reales del proyecto irán solo a un modelo local.
+
+00:04:50.464 --> 00:04:52.262
+<v Amparo>Ahora dibujemos el flujo,
+
+00:04:52.262 --> 00:04:56.268
+<v Amparo>con un punto de control humano en cada etapa que lo necesite.
+
+00:05:04.068 --> 00:05:07.765
+Las herramientas gratuitas permiten trabajar sin presupuesto,
+
+00:05:07.765 --> 00:05:11.733
+pero con menos capacidad: documente qué versión usó.
+
+00:05:11.733 --> 00:05:15.804
+Y recuerde: la interpretación sigue siendo suya.

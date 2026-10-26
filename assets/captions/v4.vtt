@@ -1,0 +1,319 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:04.157
+Haga la misma pregunta a dos herramientas de IA para literatura
+
+00:00:04.157 --> 00:00:07.347
+y puede recibir dos listas distintas.
+
+00:00:07.347 --> 00:00:08.737
+¿Por qué?
+
+00:00:08.737 --> 00:00:12.264
+Para usarlas bien, hay que saber cómo buscan.
+
+00:00:14.063 --> 00:00:16.040
+Según el programa del curso,
+
+00:00:16.040 --> 00:00:20.491
+casi todas estas herramientas buscan en las mismas grandes bases abiertas,
+
+00:00:20.491 --> 00:00:26.351
+como Semantic Scholar y OpenAlex, con más de 200 millones de registros.
+
+00:00:26.851 --> 00:00:31.021
+Combinan la búsqueda por palabras clave con la búsqueda por significado,
+
+00:00:31.021 --> 00:00:32.297
+la de los embeddings,
+
+00:00:32.297 --> 00:00:37.819
+y un LLM lee resúmenes o textos completos para estimar la relevancia.
+
+00:00:39.620 --> 00:00:44.925
+Las más agénticas repiten un ciclo: buscan, leen, reformulan la consulta,
+
+00:00:44.925 --> 00:00:49.244
+siguen citas y se detienen cuando ya no aparece nada nuevo.
+
+00:00:49.744 --> 00:00:53.225
+De una herramienta a otra cambian cómo ordenan y filtran,
+
+00:00:53.225 --> 00:00:57.205
+cuántos artículos leen completos y cuándo se detienen.
+
+00:00:57.205 --> 00:01:00.369
+Por eso dos herramientas, o la misma en dos fechas,
+
+00:01:00.369 --> 00:01:03.184
+pueden devolver listas distintas.
+
+00:01:04.983 --> 00:01:10.392
+Undermind sirve para búsquedas exhaustivas sobre temas muy específicos.
+
+00:01:10.392 --> 00:01:14.027
+Precisa el tema con preguntas, lee cientos de artículos,
+
+00:01:14.027 --> 00:01:19.422
+sigue citas y se detiene cuando ya no aparecen resultados relevantes nuevos.
+
+00:01:19.422 --> 00:01:24.136
+Ojo: sus comparaciones de desempeño las hizo la propia empresa.
+
+00:01:24.636 --> 00:01:29.061
+Asta encuentra artículos y entrega un reporte con cada afirmación citada,
+
+00:01:29.061 --> 00:01:33.107
+aunque solo una parte de su corpus tiene texto completo.
+
+00:01:34.907 --> 00:01:40.091
+<v Mariana>Si el medidor de Consensus dice «sí», es que la literatura dice que sí.
+
+00:01:40.441 --> 00:01:41.819
+No.
+
+00:01:41.819 --> 00:01:47.316
+Según la propia herramienta, Consensus busca en más de 220 millones de artículos,
+
+00:01:47.316 --> 00:01:50.135
+pero su medidor clasifica los 20 más relevantes
+
+00:01:50.135 --> 00:01:53.146
+y solo refleja los primeros 5 a 20 estudios,
+
+00:01:53.146 --> 00:01:55.417
+no toda la literatura.
+
+00:01:57.217 --> 00:02:02.012
+Elicit resume artículos y extrae sus datos a columnas, como muestra,
+
+00:02:02.012 --> 00:02:04.273
+método y resultados.
+
+00:02:04.773 --> 00:02:07.094
+Connected Papers no es un chat:
+
+00:02:07.094 --> 00:02:11.878
+arma un grafo de artículos parecidos a partir de un artículo semilla.
+
+00:02:11.878 --> 00:02:16.917
+No lee los textos, así que todo depende de escoger bien la semilla.
+
+00:02:18.717 --> 00:02:22.415
+En noviembre de 2025, Cochrane, Campbell,
+
+00:02:22.415 --> 00:02:27.301
+JBI y la Collaboration for Environmental Evidence respaldaron las recomendaciones
+
+00:02:27.301 --> 00:02:27.888
+RAISE:
+
+00:02:27.888 --> 00:02:30.006
+los autores siguen siendo responsables
+
+00:02:30.006 --> 00:02:33.957
+y deben justificar cada herramienta y reportar su uso.
+
+00:02:34.457 --> 00:02:40.409
+PRISMA aún no tiene extensión oficial para IA: hay una actualización en desarrollo.
+
+00:02:42.209 --> 00:02:46.444
+Estas herramientas sirven para explorar y delimitar un tema.
+
+00:02:46.444 --> 00:02:48.345
+En una revisión sistemática,
+
+00:02:48.345 --> 00:02:53.013
+la búsqueda principal sigue haciéndose en bases como Scopus, Web of Science,
+
+00:02:53.013 --> 00:02:56.897
+SciELO o Redalyc, con ecuaciones reproducibles.
+
+00:02:57.397 --> 00:03:01.185
+Y como el orden de los resultados es opaco y cambia con el tiempo,
+
+00:03:01.185 --> 00:03:06.541
+registre herramienta, fecha, consulta exacta y número de resultados.
+
+00:03:08.341 --> 00:03:13.285
+<v Mariana>Ninguna herramienta encontró nada, así que no hay estudios sobre mi tema.
+
+00:03:13.635 --> 00:03:18.584
+Nunca concluya que no hay estudios porque una herramienta no los encontró.
+
+00:03:18.584 --> 00:03:23.176
+La literatura en español, las revistas regionales y la literatura gris,
+
+00:03:23.176 --> 00:03:27.526
+como los informes del DANE o la CEPAL, suelen estar subrepresentadas:
+
+00:03:27.526 --> 00:03:31.419
+complemente con SciELO, Redalyc y repositorios.
+
+00:03:33.219 --> 00:03:37.517
+Muchas herramientas leen solo resúmenes y pierden los matices de muestra,
+
+00:03:37.517 --> 00:03:42.147
+contexto y limitaciones: antes de citar, lea el texto.
+
+00:03:42.647 --> 00:03:47.315
+Y subir PDF a herramientas de IA puede estar restringido por las licencias de la
+
+00:03:47.315 --> 00:03:47.914
+editorial
+
+00:03:47.914 --> 00:03:49.152
+o de la biblioteca:
+
+00:03:49.152 --> 00:03:52.919
+revise las condiciones y prefiera el acceso abierto.
+
+00:04:00.719 --> 00:04:05.286
+Una conversación suelta se pierde y empieza de cero cada vez.
+
+00:04:05.286 --> 00:04:09.814
+Un proyecto le da a la IA contexto persistente: instrucciones fijas,
+
+00:04:09.814 --> 00:04:12.767
+documentos del proyecto e historial.
+
+00:04:13.267 --> 00:04:19.186
+Por ejemplo, el protocolo, el libro de códigos o la guía de estilo de la revista.
+
+00:04:19.186 --> 00:04:22.375
+Guarde las instrucciones del proyecto con versión y fecha,
+
+00:04:22.375 --> 00:04:25.267
+como haría con un plan de análisis.
+
+00:04:27.067 --> 00:04:33.355
+<v Mariana>Con Gemini Notebook, que responde solo con mis fuentes, ya no hay invenciones.
+
+00:04:33.705 --> 00:04:36.869
+Las reduce, pero no las elimina.
+
+00:04:36.869 --> 00:04:41.818
+Y su síntesis es tan buena como la selección de fuentes: si faltan estudios clave,
+
+00:04:41.818 --> 00:04:45.057
+la conclusión hereda un sesgo de selección.
+
+00:04:46.857 --> 00:04:51.155
+El curso propone un modelo de instrucciones: responder en español,
+
+00:04:51.155 --> 00:04:54.127
+usar solo las fuentes del proyecto cuando se pida,
+
+00:04:54.127 --> 00:04:59.529
+nunca inventar referencias ni cifras y proponer un plan antes de una tarea larga.
+
+00:05:00.029 --> 00:05:03.638
+Y lo que carga en un proyecto queda en los servidores de la empresa:
+
+00:05:03.638 --> 00:05:07.037
+no cargue datos personales sin anonimizar.
+
+00:05:08.837 --> 00:05:11.847
+Una skill es una carpeta con instrucciones y recursos
+
+00:05:11.847 --> 00:05:14.755
+que el agente carga solo cuando la tarea lo pide:
+
+00:05:14.755 --> 00:05:18.677
+como el instructivo del grupo para codificar entrevistas.
+
+00:05:19.177 --> 00:05:23.781
+Un subagente es un agente auxiliar al que el principal delega una subtarea;
+
+00:05:23.781 --> 00:05:27.769
+trabaja con su propio contexto y devuelve un resumen.
+
+00:05:28.269 --> 00:05:34.864
+Un plugin agrupa skills, subagentes, conectores y comandos, como un kit de métodos.
+
+00:05:34.864 --> 00:05:39.724
+Y un conector MCP es el puente estándar hacia una herramienta o base de datos,
+
+00:05:39.724 --> 00:05:42.549
+como una credencial de biblioteca.
+
+00:05:44.349 --> 00:05:47.767
+Anthropic lanzó las skills en octubre de 2025
+
+00:05:47.767 --> 00:05:50.649
+y en diciembre las publicó como estándar abierto:
+
+00:05:50.649 --> 00:05:55.828
+hoy las leen Claude, ChatGPT, Codex, GitHub Copilot y OpenCode,
+
+00:05:55.828 --> 00:05:58.173
+entre otras herramientas.
+
+00:05:58.673 --> 00:06:03.239
+Para investigar, una skill es un protocolo escrito: se puede compartir,
+
+00:06:03.239 --> 00:06:07.933
+versionar y publicar como material suplementario, por ejemplo en OSF,
+
+00:06:07.933 --> 00:06:10.577
+igual que un libro de códigos.
+
+00:06:12.377 --> 00:06:17.517
+Una skill aplicada a 200 documentos multiplica los aciertos y también los errores:
+
+00:06:17.517 --> 00:06:22.481
+pruébela con una muestra y valídela antes de usarla con todo el material.
+
+00:06:22.981 --> 00:06:26.884
+Instale plugins y skills de terceros solo de fuentes confiables,
+
+00:06:26.884 --> 00:06:29.766
+porque ejecutan instrucciones con los mismos permisos
+
+00:06:29.766 --> 00:06:33.492
+que usted. Y pida a cada subagente las fuentes,
+
+00:06:33.492 --> 00:06:36.253
+citas y archivos en que se basa.
+
+00:06:44.053 --> 00:06:46.871
+<v Julián>Nuestra pregunta, en español y en inglés:
+
+00:06:46.871 --> 00:06:49.563
+<v Julián>¿el salario mínimo aumenta la informalidad?
+
+00:06:49.563 --> 00:06:53.149
+<v Julián>La corrimos en Asta, Consensus y Undermind.
+
+00:06:53.499 --> 00:06:57.574
+<v Mariana>Para cada una anotamos cuántos de los 10 primeros resultados sirven,
+
+00:06:57.574 --> 00:07:00.795
+<v Mariana>cuáles se repiten y cuántos están en español.
+
+00:07:01.145 --> 00:07:04.295
+<v Amparo>Y verificamos tres referencias: que existan,
+
+00:07:04.295 --> 00:07:08.441
+<v Amparo>que sus datos coincidan y que digan lo que la herramienta afirma.
+
+00:07:08.791 --> 00:07:12.324
+Esa comparación, registrada en la hoja compartida,
+
+00:07:12.324 --> 00:07:15.151
+es el primer producto de la sesión.
+
+00:07:16.951 --> 00:07:23.739
+<v Mariana>Y diseñamos nuestra skill, ficha-articulo: cuándo usarla, sus pasos, sus criterios,
+
+00:07:23.739 --> 00:07:27.895
+<v Mariana>un ejemplo y lo que nunca debe hacer, como inventar un dato.
+
+00:07:28.246 --> 00:07:32.854
+<v Amparo>En la sexta sesión la convertimos en un archivo que el agente usa.
+
+00:07:34.654 --> 00:07:40.228
+Combine las herramientas, compare sus resultados y verifique cada referencia.
+
+00:07:40.228 --> 00:07:44.806
+Y quédese con esta regla: antes de citar, lea el texto.

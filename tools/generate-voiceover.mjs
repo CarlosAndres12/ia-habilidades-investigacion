@@ -1,4 +1,5 @@
-// Synthesizes the narration of the videos with Azure AI Speech on the free tier F0 (base §4).
+// Synthesizes the narration of the videos with Azure AI Speech on the free tier F0 (base §4), or with
+// the free Edge TTS voices (no key) when voice.config.json says "engine": "edge" or with --engine edge.
 //   node tools/generate-voiceover.mjs --dry-run          lengths vs target and billable characters, no Azure
 //   node tools/generate-voiceover.mjs --voice-test       audition the voices and calibrate wordsPerSecond
 //   node tools/generate-voiceover.mjs [--only v4] [--force] [--allow-over-budget]
@@ -13,6 +14,7 @@ import { ROOT, loadData } from './lib/load-data.mjs';
 import { lineSSML } from './lib/ssml.mjs';
 import { billable, Ledger } from './lib/budget.mjs';
 import { credentials, voicesList, makeSynth } from './lib/tts-azure.mjs';
+import { makeSynth as makeEdgeSynth } from './lib/tts-edge.mjs';
 
 const TOOLS = path.join(ROOT, 'tools');
 const CACHE = path.join(TOOLS, '.cache');
@@ -20,6 +22,8 @@ const args = process.argv.slice(2);
 const flag = (n) => args.includes(n);
 const val = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
 const cfg = JSON.parse(fs.readFileSync(path.join(TOOLS, 'voice.config.json'), 'utf8'));
+if (val('--engine')) cfg.engine = val('--engine');
+const EDGE = cfg.engine === 'edge';
 const lexicon = JSON.parse(fs.readFileSync(path.join(TOOLS, 'lexicon.es.json'), 'utf8')).entries;
 const NS = loadData();
 const D = NS.data, CAP = NS.engine.captions, TL = NS.engine.timeline;
@@ -34,7 +38,7 @@ function plan(video) {
     const chunks = CAP.chunk(ln.text);
     const rate = v.rate;
     const { ssml } = lineSSML({ chunks, say: ln.say, voice: v.voice, locale: v.locale, rate, pitch: v.pitch, lexicon });
-    const hash = crypto.createHash('sha256').update([v.voice, rate, v.pitch, ssml, cfg.outputFormat].join('|')).digest('hex').slice(0, 24);
+    const hash = crypto.createHash('sha256').update([EDGE ? 'edge' : '', v.voice, rate, v.pitch, ssml, cfg.outputFormat].join('|')).digest('hex').slice(0, 24);
     out.push({ scene: sc.id, index: i, voice: ln.voice, text: ln.text, say: ln.say, chunks, ssml, hash, chars: billable(ssml), words: ln.text.split(/\s+/).length });
   }));
   return out;
@@ -85,15 +89,15 @@ async function main() {
     return;
   }
 
-  const cred = credentials(TOOLS, cfg);
-  if (!cred) {
+  const cred = EDGE ? null : credentials(TOOLS, cfg);
+  if (!EDGE && !cred) {
     console.error('Faltan AZURE_SPEECH_KEY y AZURE_SPEECH_REGION (variables de entorno o tools/.env). Vea tools/.env.example y el README. Use --dry-run para estimar sin Azure.');
     process.exit(2);
   }
-  // verify the configured voices once
-  const list = await voicesList(cred);
+  // verify the configured voices once (Azure; Edge offers the same neural voices)
+  const list = EDGE ? [] : await voicesList(cred);
   const names = new Set(list.map((v) => v.ShortName));
-  for (const [role, v] of Object.entries(cfg.voices)) {
+  for (const [role, v] of Object.entries(EDGE ? {} : cfg.voices)) {
     if (!names.has(v.voice)) {
       const alt = (v.alternatives || []).find((a) => names.has(a));
       if (!alt) { console.error(`La voz ${v.voice} (${role}) no está disponible en ${cred.region} y no tiene alternativa disponible.`); process.exit(2); }
@@ -101,14 +105,14 @@ async function main() {
       v.voice = alt;
     }
   }
-  const synth = await makeSynth(cred, cfg.outputFormat);
-  const wait = limiter(cfg.rateLimit);
+  const synth = EDGE ? await makeEdgeSynth() : await makeSynth(cred, cfg.outputFormat);
+  const wait = limiter(EDGE ? cfg.edge.rateLimit : cfg.rateLimit);
   fs.mkdirSync(CACHE, { recursive: true });
 
   async function synthCached(item, force) {
     const wav = path.join(CACHE, item.hash + '.wav'), meta = path.join(CACHE, item.hash + '.json');
     if (!force && fs.existsSync(wav) && fs.existsSync(meta)) return JSON.parse(fs.readFileSync(meta, 'utf8'));
-    if (ledger.used + item.chars > cfg.monthlyBudgetChars && !flag('--allow-over-budget')) {
+    if (!EDGE && ledger.used + item.chars > cfg.monthlyBudgetChars && !flag('--allow-over-budget')) {
       throw new Error(`Se superaría el presupuesto mensual de ${cfg.monthlyBudgetChars} caracteres (usados: ${ledger.used}). En F0 la síntesis se detiene; espere al mes siguiente o use S0 con --allow-over-budget.`);
     }
     let tries = 0;
@@ -116,7 +120,7 @@ async function main() {
       await wait();
       try {
         const r = await synth(item.ssml);
-        ledger.add(item.chars);
+        if (!EDGE) ledger.add(item.chars);
         fs.writeFileSync(wav, r.wav);
         const m = { duration: ffprobe(wav), bookmarks: r.bookmarks, words: r.words };
         fs.writeFileSync(meta, JSON.stringify(m));
@@ -159,8 +163,9 @@ async function main() {
   }
 
   // ------------------------------------------------------------------ full synthesis
-  console.log(`${totalChars} caracteres facturables en total (sin contar la caché) · usados este mes: ${ledger.used} de ${cfg.monthlyBudgetChars}.`);
-  if (ledger.used > cfg.monthlyBudgetChars * cfg.warnAtShare) console.warn(`Aviso: ya se usó más del ${cfg.warnAtShare * 100} % del presupuesto mensual.`);
+  if (EDGE) console.log('Voces de Edge TTS (gratuitas, sin clave).');
+  else console.log(`${totalChars} caracteres facturables en total (sin contar la caché) · usados este mes: ${ledger.used} de ${cfg.monthlyBudgetChars}.`);
+  if (!EDGE && ledger.used > cfg.monthlyBudgetChars * cfg.warnAtShare) console.warn(`Aviso: ya se usó más del ${cfg.warnAtShare * 100} % del presupuesto mensual.`);
   const manifest = {};
   const manFile = path.join(ROOT, 'assets', 'audio', 'manifest.js');
   try { const prev = fs.readFileSync(manFile, 'utf8').match(/audioManifest = (\{[\s\S]*\});/); if (prev) Object.assign(manifest, JSON.parse(prev[1])); } catch { /* new manifest */ }
@@ -222,7 +227,7 @@ async function main() {
     execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', raw, '-af', filter, '-ar', '24000', '-ac', '1', '-c:a', 'libmp3lame', '-b:a', '128k', mp3]);
     // manifest and captions
     manifest[v.id] = {
-      file: 'assets/audio/' + v.id + '.mp3', duration: tl.duration,
+      file: v.id + '.mp3', duration: tl.duration,
       chapters: tl.chapters.map((c) => ({ title: c.title, start: c.start })),
       scenes: tl.scenes.map((s) => ({ id: s.id, start: s.start, end: s.end })),
       lines: lines.map((x) => ({ scene: x.scene, index: x.index, voice: x.voice, start: 0, dur: x.dur, chunks: x.chunks })),
@@ -237,7 +242,7 @@ async function main() {
     fs.mkdirSync(path.join(ROOT, 'assets', 'captions'), { recursive: true });
     fs.writeFileSync(path.join(ROOT, 'assets', 'captions', v.id + '.vtt'), vtt.join('\n'));
     const [lo, hi] = v.target || [0, 1e9];
-    console.log(`  duración ${clock(tl.duration)} (objetivo ${clock(lo)}–${clock(hi)})${tl.duration < lo || tl.duration > hi ? ' ← fuera del objetivo: reajuste escenas' : ''} · facturados en esta corrida: ${billed} · mes: ${ledger.used}/${cfg.monthlyBudgetChars}`);
+    console.log(`  duración ${clock(tl.duration)} (objetivo ${clock(lo)}–${clock(hi)})${tl.duration < lo || tl.duration > hi ? ' ← fuera del objetivo: reajuste escenas' : ''}${EDGE ? '' : ` · facturados en esta corrida: ${billed} · mes: ${ledger.used}/${cfg.monthlyBudgetChars}`}`);
   }
   fs.writeFileSync(manFile, '/* GENERATED by tools/generate-voiceover.mjs. Never edit by hand. */\nwindow.IAHI = window.IAHI || {};\nwindow.IAHI.audioManifest = ' + JSON.stringify(manifest) + ';\n');
   console.log('\nListo: assets/audio/*.mp3, assets/audio/manifest.js y assets/captions/*.vtt. Escuche cada video completo antes de clase.');

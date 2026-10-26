@@ -2,7 +2,7 @@
   "name": "ia-habilidades-investigacion-tools",
   "private": true,
   "type": "module",
-  "description": "Herramientas de desarrollo del sitio: voces (Azure AI Speech, F0), revisiones y capturas. No se necesitan para ver el sitio.",
+  "description": "Herramientas de desarrollo del sitio: voces (Edge TTS sin clave, o Azure AI Speech F0), revisiones y capturas. No se necesitan para ver el sitio.",
   "engines": { "node": ">=22" },
   "scripts": {
     "voces:prueba": "node generate-voiceover.mjs --voice-test",

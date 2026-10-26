@@ -1,0 +1,397 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:04.018
+¿Para qué usa hoy la IA en su investigación?
+
+00:00:04.018 --> 00:00:07.704
+Antes de responder, conviene saber qué es ese instrumento,
+
+00:00:07.704 --> 00:00:10.584
+cómo se construyó y qué puede medir.
+
+00:00:12.383 --> 00:00:17.395
+Según el programa del curso, un modelo de IA es una función ajustada a datos:
+
+00:00:17.395 --> 00:00:20.759
+recibe una entrada y produce una salida.
+
+00:00:21.259 --> 00:00:23.618
+Los parámetros del modelo se ajustaron para
+
+00:00:23.618 --> 00:00:27.572
+que el error en ejemplos conocidos fuera el menor posible.
+
+00:00:29.372 --> 00:00:33.692
+<v Mariana>Si responde tan bien, es porque entiende lo que le pregunto.
+
+00:00:34.042 --> 00:00:37.218
+La palabra «inteligencia» puede engañar.
+
+00:00:37.218 --> 00:00:41.899
+Estos sistemas detectan regularidades estadísticas en enormes cantidades de datos
+
+00:00:41.899 --> 00:00:44.258
+y las usan para predecir.
+
+00:00:44.258 --> 00:00:49.186
+Responder bien no significa entender el mundo que describen esos datos.
+
+00:00:50.986 --> 00:00:54.672
+Piense en cuatro niveles, uno dentro de otro.
+
+00:00:54.672 --> 00:00:59.901
+La inteligencia artificial incluye sistemas de reglas escritas a mano, como ELIZA,
+
+00:00:59.901 --> 00:01:02.697
+y sistemas que aprenden de datos.
+
+00:01:03.197 --> 00:01:06.895
+El aprendizaje automático extrae patrones de los ejemplos,
+
+00:01:06.895 --> 00:01:11.982
+y el aprendizaje profundo lo hace con redes neuronales de muchas capas.
+
+00:01:12.482 --> 00:01:19.050
+La IA generativa produce contenido nuevo; un LLM es IA generativa para texto.
+
+00:01:19.050 --> 00:01:24.962
+Todo LLM es aprendizaje profundo, pero no toda la IA aprende de datos.
+
+00:01:26.762 --> 00:01:32.079
+Entrenar es ajustar los parámetros con datos, algo costoso que se hace pocas veces;
+
+00:01:32.079 --> 00:01:36.698
+inferir es usar el modelo ya entrenado, como ocurre en un chat.
+
+00:01:37.198 --> 00:01:40.589
+Los parámetros son las perillas que ajusta el entrenamiento:
+
+00:01:40.589 --> 00:01:44.446
+los LLM actuales tienen miles de millones.
+
+00:01:46.246 --> 00:01:48.961
+<v Julián>Para un economista, la idea es conocida:
+
+00:01:48.961 --> 00:01:53.446
+<v Julián>una regresión lineal es un modelo con pocos parámetros ajustados a datos.
+
+00:01:53.796 --> 00:01:59.025
+Un LLM aplica la misma idea con miles de millones de parámetros.
+
+00:01:59.025 --> 00:02:04.089
+Según Mullainathan y Spiess, la econometría suele estimar e interpretar un efecto,
+
+00:02:04.089 --> 00:02:08.628
+y el aprendizaje automático, predecir bien casos nuevos.
+
+00:02:09.128 --> 00:02:14.458
+Por eso, para la validez, predecir bien no es lo mismo que identificar efectos:
+
+00:02:14.458 --> 00:02:16.104
+según Athey e Imbens,
+
+00:02:16.104 --> 00:02:20.960
+las preguntas causales siguen necesitando diseños de identificación.
+
+00:02:22.760 --> 00:02:26.816
+La historia de la IA alterna promesas y decepciones.
+
+00:02:26.816 --> 00:02:31.012
+En 1950, Turing propuso el juego de la imitación;
+
+00:02:31.012 --> 00:02:37.262
+en 1956 nació el término «inteligencia artificial»; en 1958,
+
+00:02:37.262 --> 00:02:40.232
+el perceptrón aprendió de ejemplos.
+
+00:02:40.732 --> 00:02:45.399
+Los inviernos de las décadas de 1970 y 1980 llegaron
+
+00:02:45.399 --> 00:02:49.948
+cuando las expectativas superaron lo que la técnica podía cumplir.
+
+00:02:50.448 --> 00:02:54.770
+La idea de red neuronal existía desde 1958:
+
+00:02:54.770 --> 00:02:58.272
+lo que cambió después de 2012 fue la escala.
+
+00:03:00.072 --> 00:03:05.619
+Crecieron a la vez tres motores: datos digitales masivos; procesadores gráficos,
+
+00:03:05.619 --> 00:03:09.599
+que hacen millones de cálculos en paralelo; y mejores algoritmos,
+
+00:03:09.599 --> 00:03:12.768
+como el Transformer de 2017.
+
+00:03:13.268 --> 00:03:19.389
+Y desde ChatGPT, en 2022, la IA dejó de ser una herramienta de especialistas:
+
+00:03:19.389 --> 00:03:22.460
+hoy aparece en todas las disciplinas.
+
+00:03:24.260 --> 00:03:28.864
+La demostración del curso hace la misma pregunta a tres épocas.
+
+00:03:28.864 --> 00:03:31.696
+ELIZA, de 1966,
+
+00:03:31.696 --> 00:03:36.668
+usa reglas simples que imitan a un terapeuta y solo responde en inglés.
+
+00:03:37.168 --> 00:03:41.223
+En una prueba, ante la pregunta por las causas del empleo informal,
+
+00:03:41.223 --> 00:03:46.264
+respondió con otra pregunta: «¿En qué le ayudaría una respuesta a eso?».
+
+00:03:46.614 --> 00:03:50.910
+<v Mariana>Y el chat actual me respondió con fluidez y en español.
+
+00:03:51.260 --> 00:03:54.040
+La fluidez no es veracidad.
+
+00:03:54.040 --> 00:03:58.377
+Weizenbaum se alarmó de que la gente le atribuyera comprensión a su programa:
+
+00:03:58.377 --> 00:04:00.428
+es el efecto ELIZA.
+
+00:04:02.227 --> 00:04:07.036
+Compare las tres respuestas: ¿qué cambió de una época a otra?
+
+00:04:07.036 --> 00:04:11.347
+Piénselo, o converse con su grupo, antes de seguir.
+
+00:04:19.148 --> 00:04:24.288
+Cambiaron el tamaño, los datos y el ajuste para seguir instrucciones.
+
+00:04:24.288 --> 00:04:27.936
+Y como los modelos se actualizan y se retiran en cuestión de meses,
+
+00:04:27.936 --> 00:04:31.460
+registre siempre nombre, versión y fecha.
+
+00:04:31.960 --> 00:04:38.056
+Un modelo entrenado es, en el fondo, un archivo enorme de números: los pesos.
+
+00:04:38.056 --> 00:04:41.870
+Lo que una empresa publica de ese archivo, y de cómo lo produjo,
+
+00:04:41.870 --> 00:04:44.320
+define tres categorías.
+
+00:04:46.120 --> 00:04:49.078
+De código abierto: se publican los pesos,
+
+00:04:49.078 --> 00:04:50.481
+el código de entrenamiento
+
+00:04:50.481 --> 00:04:54.460
+e información suficiente sobre los datos para reconstruir el modelo,
+
+00:04:54.460 --> 00:04:57.400
+según la definición de la OSI.
+
+00:04:57.900 --> 00:05:01.113
+De pesos abiertos: solo se publican los pesos,
+
+00:05:01.113 --> 00:05:04.123
+con licencias que van de muy libres a restrictivas;
+
+00:05:04.123 --> 00:05:08.364
+el modelo puede correr sin internet y con una versión fija.
+
+00:05:08.864 --> 00:05:12.920
+Cerrados: el acceso es solo por app o API.
+
+00:05:12.920 --> 00:05:17.001
+Suelen liderar en capacidad, pero cambian o se retiran sin aviso,
+
+00:05:17.001 --> 00:05:19.832
+y los datos salen de su computador.
+
+00:05:21.632 --> 00:05:24.628
+Un caso para discutir: Latam-GPT,
+
+00:05:24.628 --> 00:05:26.733
+lanzado en febrero de 2026
+
+00:05:26.733 --> 00:05:31.640
+y coordinado por el CENIA de Chile con instituciones de 15 países.
+
+00:05:31.990 --> 00:05:36.022
+<v Mariana>Se presenta como de código abierto, así que lo es.
+
+00:05:36.372 --> 00:05:37.749
+No.
+
+00:05:37.749 --> 00:05:43.272
+El modelo publicado es Llama 3.1 70B reentrenado con un corpus latinoamericano
+
+00:05:43.272 --> 00:05:45.963
+y conserva la licencia de Llama.
+
+00:05:45.963 --> 00:05:48.974
+Según la OSI, es de pesos abiertos:
+
+00:05:48.974 --> 00:05:52.716
+pesos abiertos no es lo mismo que código abierto.
+
+00:05:54.516 --> 00:05:59.439
+Artificial Analysis compara modelos con un índice de inteligencia.
+
+00:05:59.439 --> 00:06:02.679
+En su foto del 22 de octubre de 2026,
+
+00:06:02.679 --> 00:06:08.087
+el mejor cerrado obtenía 58 y el mejor de pesos abiertos, 46:
+
+00:06:08.087 --> 00:06:10.476
+12 puntos de diferencia.
+
+00:06:10.976 --> 00:06:15.324
+Pero ese índice promedia diez evaluaciones, casi todas en inglés:
+
+00:06:15.324 --> 00:06:18.603
+el desempeño en español no aparece ahí.
+
+00:06:18.603 --> 00:06:21.872
+Pruebe con una muestra de su propio material.
+
+00:06:22.372 --> 00:06:27.148
+Y como el ranking cambia cada semana, en clase se abre en vivo.
+
+00:06:28.948 --> 00:06:34.074
+Elegir modelo es una decisión metodológica, como elegir un programa estadístico:
+
+00:06:34.074 --> 00:06:37.467
+en la sección de métodos se justifica cuál, qué versión,
+
+00:06:37.467 --> 00:06:42.052
+con qué configuración y en qué fecha, y se confirma la licencia.
+
+00:06:42.552 --> 00:06:47.487
+Un modelo de pesos abiertos puede correr en su computador sin enviar datos a nadie;
+
+00:06:47.487 --> 00:06:51.454
+con uno cerrado, el material viaja a servidores de la empresa,
+
+00:06:51.454 --> 00:06:54.000
+casi siempre en el exterior.
+
+00:07:01.800 --> 00:07:04.847
+Una neurona artificial recibe varios números,
+
+00:07:04.847 --> 00:07:08.482
+multiplica cada uno por un peso que indica su importancia,
+
+00:07:08.482 --> 00:07:11.352
+los suma y calcula cuánto se activa.
+
+00:07:11.852 --> 00:07:17.060
+Una sola neurona de este tipo se parece mucho a una regresión logística.
+
+00:07:17.560 --> 00:07:19.867
+Una red apila capas de neuronas:
+
+00:07:19.867 --> 00:07:24.384
+las primeras detectan patrones simples y las siguientes los combinan.
+
+00:07:24.384 --> 00:07:29.416
+En imágenes, primero bordes, luego formas y luego objetos.
+
+00:07:31.216 --> 00:07:34.442
+Aprender es ajustar pesos: la red predice,
+
+00:07:34.442 --> 00:07:39.787
+se mide el error y cada peso se mueve un poco en la dirección que reduce ese error.
+
+00:07:39.787 --> 00:07:42.736
+Esto se repite millones de veces.
+
+00:07:43.236 --> 00:07:48.593
+Es como bajar una montaña con niebla, tanteando la pendiente bajo los pies.
+
+00:07:48.593 --> 00:07:53.052
+La retropropagación reparte la culpa del error entre los pesos.
+
+00:07:54.852 --> 00:08:01.153
+Generalizar, no memorizar: una red que memoriza sus ejemplos falla con casos nuevos.
+
+00:08:01.153 --> 00:08:06.732
+Es el sobreajuste, como el estudiante que solo memorizó el examen del año pasado.
+
+00:08:07.082 --> 00:08:10.958
+<v Julián>Es el mismo riesgo de un modelo econométrico con demasiadas variables:
+
+00:08:10.958 --> 00:08:13.106
+<v Julián>el modelo aprende el ruido.
+
+00:08:13.456 --> 00:08:16.414
+Por eso todo modelo predictivo se evalúa con datos
+
+00:08:16.414 --> 00:08:19.192
+que no vio durante el entrenamiento.
+
+00:08:20.992 --> 00:08:23.581
+¿Por qué se le llama caja negra?
+
+00:08:23.581 --> 00:08:28.492
+El modelo tiene millones de parámetros, y ninguno tiene un significado aislado,
+
+00:08:28.492 --> 00:08:31.864
+como sí lo tiene un coeficiente de regresión.
+
+00:08:32.364 --> 00:08:34.352
+Cuando la explicación importa,
+
+00:08:34.352 --> 00:08:39.544
+por ejemplo en decisiones de política pública sobre personas, se exigen auditorías,
+
+00:08:39.544 --> 00:08:43.236
+métodos de explicabilidad o modelos más simples.
+
+00:08:51.036 --> 00:08:55.537
+<v Amparo>Nuestro proyecto es el caso del curso: informalidad laboral en Colombia,
+
+00:08:55.537 --> 00:08:58.165
+<v Amparo>con literatura de economía y sociología,
+
+00:08:58.165 --> 00:09:01.764
+<v Amparo>datos públicos del DANE y material cualitativo.
+
+00:09:02.114 --> 00:09:05.977
+<v Julián>En datos va la Gran Encuesta Integrada de Hogares, y para practicar,
+
+00:09:05.977 --> 00:09:08.498
+<v Julián>solo entrevistas sintéticas.
+
+00:09:08.848 --> 00:09:12.285
+<v Mariana>Tres tareas para la IA: buscar literatura,
+
+00:09:12.285 --> 00:09:16.298
+<v Mariana>organizar los PDF y hacer una primera codificación.
+
+00:09:16.298 --> 00:09:19.864
+<v Mariana>Y un riesgo: que invente referencias.
+
+00:09:20.214 --> 00:09:24.766
+Los productos de esta sesión son esa ficha y la primera entrada de la bitácora,
+
+00:09:24.766 --> 00:09:29.600
+con fecha, herramienta y versión, tarea, instrucción, resultado,
+
+00:09:29.600 --> 00:09:31.926
+verificación y decisión.
+
+00:09:33.726 --> 00:09:38.508
+La idea de esta sesión: las salidas de un modelo son estimaciones con error,
+
+00:09:38.508 --> 00:09:40.141
+no hechos.
+
+00:09:40.141 --> 00:09:45.654
+Trátelas como las mediciones de un instrumento nuevo: compruébelas en una muestra.

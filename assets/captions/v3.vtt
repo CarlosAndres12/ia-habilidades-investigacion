@@ -1,0 +1,442 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:03.737
+¿La IA amplía o estrecha la ciencia?
+
+00:00:03.737 --> 00:00:09.911
+La sesión empieza con esa pregunta, en una escala de 1 a 5, y la repite al final.
+
+00:00:17.712 --> 00:00:22.036
+La ética decide qué datos se pueden usar y con qué riesgos.
+
+00:00:22.036 --> 00:00:29.136
+La Recomendación de la UNESCO, de 2021, la adoptaron los 193 Estados miembros.
+
+00:00:29.636 --> 00:00:34.226
+La evaluación de Colombia con la metodología RAM de la UNESCO señala brechas:
+
+00:00:34.226 --> 00:00:42.428
+el 13,8 % de las mujeres egresa de carreras STEM, frente al 35,1 % de los hombres.
+
+00:00:42.928 --> 00:00:48.475
+También muestra una brecha de internet: 59,6 % en zonas rurales,
+
+00:00:48.475 --> 00:00:52.720
+frente a 82,6 % en zonas urbanas.
+
+00:00:54.520 --> 00:01:01.959
+Colombia tiene una política de IA, el CONPES 4144, con unos COP 479.000 millones.
+
+00:01:01.959 --> 00:01:06.459
+A octubre de 2026 no tiene una ley general de IA:
+
+00:01:06.459 --> 00:01:10.960
+el estado del proyecto de ley está en la tarjeta.
+
+00:01:11.460 --> 00:01:17.305
+Y la Circular 002 de 2024 de la SIC exige evaluar el impacto en privacidad antes de
+
+00:01:17.305 --> 00:01:18.925
+usar IA de alto riesgo,
+
+00:01:18.925 --> 00:01:24.348
+y pedir consentimiento previo para usar datos personales tomados de internet.
+
+00:01:26.148 --> 00:01:31.440
+En los planes personales, las conversaciones pueden usarse para entrenar modelos y,
+
+00:01:31.440 --> 00:01:35.293
+en algunos casos, las leen revisores humanos.
+
+00:01:35.293 --> 00:01:37.920
+Revise la configuración de cada herramienta:
+
+00:01:37.920 --> 00:01:42.852
+las condiciones de octubre de 2026 están en estas tarjetas.
+
+00:01:44.652 --> 00:01:49.702
+<v Mariana>Si la SIC incluye a EE. UU. entre los países con nivel adecuado de protección,
+
+00:01:49.702 --> 00:01:52.476
+<v Mariana>puedo subir las entrevistas sin más.
+
+00:01:52.826 --> 00:01:53.030
+<v Dra. Rojas>No.
+
+00:01:53.030 --> 00:01:58.701
+<v Dra. Rojas>Enviar datos personales a un proveedor en el exterior es una transferencia regulada
+
+00:01:58.701 --> 00:01:59.794
+<v Dra. Rojas>por la Ley 1581,
+
+00:01:59.794 --> 00:02:03.961
+<v Dra. Rojas>y el nivel adecuado no reemplaza la autorización del titular.
+
+00:02:04.461 --> 00:02:07.512
+<v Dra. Rojas>Por eso el consentimiento informado debe mencionar la IA,
+
+00:02:07.512 --> 00:02:12.477
+<v Dra. Rojas>y el protocolo debe decir qué herramientas procesarán los datos y dónde se alojan.
+
+00:02:12.827 --> 00:02:16.436
+Y no suba a una IA manuscritos ajenos para evaluarlos:
+
+00:02:16.436 --> 00:02:20.430
+eso viola la confidencialidad de la revisión por pares.
+
+00:02:20.430 --> 00:02:24.498
+Los NIH de EE. UU. lo prohíben desde 2023,
+
+00:02:24.498 --> 00:02:28.188
+y muchas revistas tienen políticas parecidas.
+
+00:02:29.987 --> 00:02:36.135
+La evidencia sobre la IA es desigual: lea cada avance con su cifra y con su límite.
+
+00:02:36.135 --> 00:02:41.429
+La base de datos de AlphaFold reúne más de 200 millones de estructuras de proteínas,
+
+00:02:41.429 --> 00:02:45.539
+pero son predicciones: se validan con experimentos.
+
+00:02:46.039 --> 00:02:50.260
+En clima, según el artículo que lo presentó en 2023,
+
+00:02:50.260 --> 00:02:56.192
+GraphCast superó al mejor sistema de pronóstico operativo en el 90 % de 1.380
+
+00:02:56.192 --> 00:02:57.136
+objetivos,
+
+00:02:57.136 --> 00:03:01.783
+aunque las condiciones iniciales aún dependen de modelos físicos.
+
+00:03:03.583 --> 00:03:09.106
+En salud, el ensayo MASAI se hizo en Suecia con más de 100.000 mujeres.
+
+00:03:09.106 --> 00:03:12.997
+Con apoyo de IA se detectaron 29 % más cánceres,
+
+00:03:12.997 --> 00:03:18.751
+la carga de lectura bajó 44 % y no hubo más falsos positivos.
+
+00:03:19.251 --> 00:03:22.108
+Sus límites: un país y un sistema,
+
+00:03:22.108 --> 00:03:26.499
+y la reducción de cánceres de intervalo no fue significativa.
+
+00:03:28.299 --> 00:03:33.349
+En educación, una tutoría con GPT-4 después de clase, en Nigeria,
+
+00:03:33.349 --> 00:03:39.141
+mejoró los resultados de aprendizaje en 0,31 desviaciones estándar en seis semanas,
+
+00:03:39.141 --> 00:03:44.115
+según un documento de trabajo del Banco Mundial sin revisión por pares.
+
+00:03:44.615 --> 00:03:47.918
+Y en otro ensayo, publicado en PNAS,
+
+00:03:47.918 --> 00:03:53.581
+el acceso a GPT-4 sin guía dejó a los estudiantes 17 % por debajo del grupo de
+
+00:03:53.581 --> 00:03:54.066
+control
+
+00:03:54.066 --> 00:03:56.711
+cuando se retiró la herramienta.
+
+00:03:58.511 --> 00:03:59.722
+En el trabajo,
+
+00:03:59.722 --> 00:04:05.519
+el experimento de Noy y Zhang mostró 40 % menos tiempo en tareas de escritura.
+
+00:04:06.019 --> 00:04:08.263
+Y según Brynjolfsson y coautores,
+
+00:04:08.263 --> 00:04:13.276
+en atención al cliente se resolvieron de 14 a 15 % más casos por hora,
+
+00:04:13.276 --> 00:04:17.011
+y 34 % más entre los novatos.
+
+00:04:17.511 --> 00:04:22.574
+Pero, según otro estudio, en tareas fuera de la frontera irregular de la IA,
+
+00:04:22.574 --> 00:04:26.401
+los consultores que la usaron acertaron 19 puntos menos:
+
+00:04:26.401 --> 00:04:30.495
+pruebe la herramienta en su tarea concreta antes de adoptarla.
+
+00:04:32.295 --> 00:04:37.269
+Hao y coautores analizaron 41 millones de artículos de ciencias naturales:
+
+00:04:37.269 --> 00:04:43.287
+quienes usan IA publican 3 veces más y reciben 4,8 veces más citas.
+
+00:04:43.787 --> 00:04:46.363
+Pero el conjunto de la ciencia se estrecha:
+
+00:04:46.363 --> 00:04:51.371
+menos temas y 22 % menos interacción entre investigadores.
+
+00:04:53.171 --> 00:04:54.982
+Según Jean y coautores,
+
+00:04:54.982 --> 00:05:00.492
+los mapas de pobreza con imágenes satelitales explican hasta el 75 % de la variación
+
+00:05:00.492 --> 00:05:01.882
+de la riqueza local,
+
+00:05:01.882 --> 00:05:04.499
+pero son índices relativos.
+
+00:05:04.999 --> 00:05:06.542
+Según otro estudio,
+
+00:05:06.542 --> 00:05:12.205
+en una simulación en Indonesia esos mapas habrían excluido al 32,8 % de los
+
+00:05:12.205 --> 00:05:13.831
+elegibles.
+
+00:05:14.331 --> 00:05:19.371
+Ante cada resultado, pregunte qué tipo de evidencia tiene enfrente.
+
+00:05:21.171 --> 00:05:24.729
+En investigación social, según Gilardi y coautores,
+
+00:05:24.729 --> 00:05:29.653
+ChatGPT clasificó tuits y noticias con unos 25 puntos más de exactitud
+
+00:05:29.653 --> 00:05:32.380
+que trabajadores de plataformas.
+
+00:05:32.880 --> 00:05:39.015
+Aun así, según Ziems y coautores, no supera a modelos entrenados para la tarea.
+
+00:05:39.015 --> 00:05:41.107
+Úselo como un codificador más:
+
+00:05:41.107 --> 00:05:45.792
+compare con la codificación humana de una muestra y reporte el acuerdo.
+
+00:05:47.592 --> 00:05:53.063
+<v Mariana>Si un modelo reproduce las respuestas de los subgrupos, me ahorro la encuesta.
+
+00:05:53.414 --> 00:05:54.791
+No.
+
+00:05:54.791 --> 00:05:58.618
+Esas muestras de silicio varían menos que las respuestas reales,
+
+00:05:58.618 --> 00:06:03.656
+y sus resultados cambian con la redacción y con el tiempo; según Bisbee y coautores,
+
+00:06:03.656 --> 00:06:06.692
+no sirven para inferencia estadística.
+
+00:06:06.692 --> 00:06:10.933
+Sirven para pilotear un cuestionario o generar hipótesis.
+
+00:06:12.734 --> 00:06:22.765
+Según Walters y Wilder, GPT-3.5 inventó el 55 % de las citas, y GPT-4, el 18 %.
+
+00:06:23.265 --> 00:06:25.012
+En PubMed Central,
+
+00:06:25.012 --> 00:06:30.956
+los artículos con al menos una referencia inexistente pasaron de 1 en 2.828,
+
+00:06:30.956 --> 00:06:39.129
+en 2023, a 1 en 277 a inicios de 2026, según un análisis preliminar.
+
+00:06:39.629 --> 00:06:42.128
+Y, en ese análisis preliminar,
+
+00:06:42.128 --> 00:06:47.511
+más del 98 % de esos artículos no tenía ninguna corrección de la editorial:
+
+00:06:47.511 --> 00:06:51.045
+el filtro es quien investiga, no la revista.
+
+00:06:51.045 --> 00:06:54.461
+Toda referencia sugerida por IA se verifica.
+
+00:06:56.261 --> 00:07:00.458
+En estadística, un sesgo es un error sistemático.
+
+00:07:00.458 --> 00:07:04.004
+En un LLM es una desviación sistemática de sus salidas
+
+00:07:04.004 --> 00:07:06.185
+que favorece o perjudica a grupos,
+
+00:07:06.185 --> 00:07:10.181
+perspectivas o respuestas sin que la tarea lo justifique.
+
+00:07:10.681 --> 00:07:14.469
+Según Gallegos y coautores, hay daños de representación,
+
+00:07:14.469 --> 00:07:18.512
+como estereotipos o desempeño desigual, y daños de asignación,
+
+00:07:18.512 --> 00:07:22.921
+como la discriminación en crédito, empleo o subsidios.
+
+00:07:23.421 --> 00:07:28.408
+Y según Sharma y coautores, los asistentes tienden a darle la razón al usuario:
+
+00:07:28.408 --> 00:07:32.878
+pida críticas, contraejemplos y lecturas alternativas.
+
+00:07:34.678 --> 00:07:38.057
+La miniauditoría del curso usa una sola instrucción:
+
+00:07:38.057 --> 00:07:42.433
+recomendar un salario para una persona con pregrado en economía.
+
+00:07:42.433 --> 00:07:47.614
+Cada pareja cambia un solo atributo: género, región de origen o edad.
+
+00:07:48.114 --> 00:07:52.207
+Cada versión se corre al menos tres veces en dos modelos distintos,
+
+00:07:52.207 --> 00:07:56.657
+y la hoja compartida promedia todas las observaciones del grupo.
+
+00:07:57.157 --> 00:08:01.404
+Es un experimento de correspondencia, como el de Bertrand y Mullainathan:
+
+00:08:01.404 --> 00:08:06.583
+aleatorizar, repetir, sumar observaciones y codificar a ciegas.
+
+00:08:06.583 --> 00:08:10.861
+Y valide el desempeño en cada grupo, no solo en promedio.
+
+00:08:18.662 --> 00:08:23.724
+Un modelo sin censura se reentrena sin las negativas; uno abliterado se edita:
+
+00:08:23.724 --> 00:08:28.070
+se borra de los pesos la dirección interna asociada a negarse.
+
+00:08:28.570 --> 00:08:30.495
+Según Arditi y coautores,
+
+00:08:30.495 --> 00:08:35.546
+en 13 modelos de pesos abiertos la negativa depende de una sola dirección interna:
+
+00:08:35.546 --> 00:08:38.378
+el ajuste de seguridad es frágil.
+
+00:08:38.378 --> 00:08:43.689
+Y, según Wang y coautores, esa dirección también opera en español.
+
+00:08:45.490 --> 00:08:51.322
+<v Mariana>Entonces, si le quito las negativas a un modelo, le quito también los sesgos.
+
+00:08:51.672 --> 00:08:55.243
+No: censura no es lo mismo que sesgo.
+
+00:08:55.243 --> 00:08:57.922
+Quitar las negativas no quita los sesgos,
+
+00:08:57.922 --> 00:09:02.664
+y lo que un modelo calla refleja decisiones de valores de quien lo ajustó.
+
+00:09:03.164 --> 00:09:04.502
+Según el NIST,
+
+00:09:04.502 --> 00:09:09.310
+modelos de DeepSeek repetían narrativas inexactas del Partido Comunista Chino unas
+
+00:09:09.310 --> 00:09:10.318
+cuatro veces más
+
+00:09:10.318 --> 00:09:12.193
+que modelos estadounidenses,
+
+00:09:12.193 --> 00:09:16.028
+aunque el resultado depende de qué narrativas se prueban.
+
+00:09:16.528 --> 00:09:21.794
+Si un modelo se niega a codificar ciertos testimonios, registre cada negativa:
+
+00:09:21.794 --> 00:09:25.288
+esos datos faltantes no son aleatorios.
+
+00:09:33.088 --> 00:09:36.570
+La IA depende de recursos concentrados.
+
+00:09:36.570 --> 00:09:39.350
+Según el AI Index 2026,
+
+00:09:39.350 --> 00:09:46.557
+la inversión privada en 2025 fue de US$285.900 millones en EE. UU.,
+
+00:09:46.557 --> 00:09:53.176
+US$20.900 millones en Europa y US$12.400 millones en China.
+
+00:09:53.676 --> 00:10:00.065
+Según la AIE, los centros de datos usaron 415 TWh en 2024,
+
+00:10:00.065 --> 00:10:03.408
+el 1,5 % de la electricidad mundial,
+
+00:10:03.408 --> 00:10:09.732
+y su proyección es que llegarían a unos 945 TWh en 2030.
+
+00:10:11.532 --> 00:10:17.691
+En el Índice Latinoamericano de Inteligencia Artificial, ILIA 2026, lideran Chile,
+
+00:10:17.691 --> 00:10:22.756
+Brasil y Uruguay; Colombia es cuarta, con 56,8 puntos,
+
+00:10:22.756 --> 00:10:28.308
+y Brasil tiene el 87,7 % de las GPU de la región.
+
+00:10:28.808 --> 00:10:32.748
+Y la disponibilidad puede cambiar: según el programa del curso,
+
+00:10:32.748 --> 00:10:38.118
+en junio de 2026 controles a la exportación suspendieron durante casi tres semanas
+
+00:10:38.118 --> 00:10:41.052
+el acceso a dos modelos de Anthropic.
+
+00:10:41.052 --> 00:10:43.784
+No dependa de un solo proveedor.
+
+00:10:51.584 --> 00:10:56.162
+<v Amparo>Para el comité, el protocolo dirá qué herramientas de IA procesarán los datos,
+
+00:10:56.162 --> 00:10:59.024
+<v Amparo>dónde se alojan y cómo se protegen.
+
+00:10:59.374 --> 00:11:02.375
+<v Dra. Rojas>Y el consentimiento debe mencionarlo.
+
+00:11:02.375 --> 00:11:07.750
+<v Dra. Rojas>Usen la cláusula modelo del curso y ajústenla con la oficina de protección de datos.
+
+00:11:08.100 --> 00:11:10.787
+<v Mariana>Las entrevistas irán a un modelo local,
+
+00:11:10.787 --> 00:11:15.036
+<v Mariana>y cada referencia que sugiera la IA la verificamos en la fuente.
+
+00:11:16.836 --> 00:11:21.031
+La IA ya produce avances verificables, pero inventa referencias,
+
+00:11:21.031 --> 00:11:24.182
+reproduce sesgos y concentra poder.
+
+00:11:24.182 --> 00:11:27.461
+El filtro es quien investiga: la IA no es autora,
+
+00:11:27.461 --> 00:11:30.540
+y usted responde por todo el contenido.
