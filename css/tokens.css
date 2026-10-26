@@ -1,0 +1,96 @@
+/* STYLE · Miró — role colors mirrored from js/style/tokens.js (checked by tools/check-style.mjs),
+   core legend colors (base §1.5), type scale, spacing and the self-hosted fonts (style S9). */
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../assets/fonts/atkinson-hyperlegible-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../assets/fonts/atkinson-hyperlegible-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../assets/fonts/atkinson-hyperlegible-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/fraunces-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* palette roles (style S3) */
+  --ground: #F4EEDF;
+  --ground-2: #E7D3A8;
+  --ink: #15120F;
+  --ink-soft: #4A4038;
+  --dark: #0E1A3B;
+  --on-dark: #F4EEDF;
+  --accent-1: #D7261E;
+  --accent-2: #FCD619;
+  --accent-3: #1C3F95;
+  --accent-4: #267933;
+  --accent-5: #C0D5EC;
+  --accent-6: #A87F43;
+  --accent-7: #94461C;
+  --accent-8: #6B4426;
+  --skin-1: #F2CDAE;
+  --skin-2: #DAA882;
+  --skin-3: #B18661;
+  --skin-4: #8A5634;
+  --skin-5: #5C3A24;
+  --machine-ground: #0E1A3B;
+  --machine-line: #C1DCFD;
+  --machine-grid: #2A3D6E;
+  --machine-glow-1: #46F0B0;
+  --machine-glow-2: #FF36F0;
+  --alert: #A3123A;
+
+  /* core legend colors in the style's legend order (yellow excluded) */
+  --legend-1: #0072B2;
+  --legend-2: #D55E00;
+  --legend-3: #009E73;
+  --legend-4: #CC79A7;
+  --legend-5: #56B4E9;
+  --legend-6: #E69F00;
+
+  /* type */
+  --font-body: "Atkinson Hyperlegible", "Noto Sans", "DejaVu Sans", system-ui, sans-serif;
+  --font-display: "Fraunces", "Noto Serif Display", Georgia, serif;
+  --fs-0: 1.125rem;   /* 18 px body minimum */
+  --fs-small: 1rem;
+  --fs-1: 1.25rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1.9rem;
+  --fs-4: 2.5rem;
+  --fs-5: 3.2rem;
+  --lh: 1.55;
+
+  /* spacing and shape */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4.5rem;
+  --radius: 14px;
+  --radius-pill: 999px;
+  --line: 2px;
+  --line-bold: 3px;
+  --measure: 72ch;
+  --page-max: 1180px;
+  --touch: 44px;
+}

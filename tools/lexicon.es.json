@@ -1,0 +1,675 @@
+{
+ "_comment": "Pronunciation aliases (spec §5.4). Every alias is to confirm by ear with each voice. Entries apply before the number rules and protect the digits inside them. Longest terms win.",
+ "entries": [
+  {
+   "term": "IA",
+   "alias": "i a",
+   "note": "base §4.5; to confirm by ear"
+  },
+  {
+   "term": "LLM",
+   "alias": "ele ele eme",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "PDF",
+   "alias": "pe de efe",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "CSV",
+   "alias": "ce ese ve",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "GPU",
+   "alias": "ge pe u",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "API",
+   "alias": "a pe i",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "MCP",
+   "alias": "eme ce pe",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "DANE",
+   "alias": "dane",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "OSI",
+   "alias": "o ese i",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "SIC",
+   "alias": "sic",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "NIH",
+   "alias": "ene i ache",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "NIST",
+   "alias": "nist",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "PNAS",
+   "alias": "pe ene a ese",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "ILIA",
+   "alias": "ilia",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "AIE",
+   "alias": "a i e",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "UNESCO",
+   "alias": "unesco",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "STEM",
+   "alias": "stem",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "CEPAL",
+   "alias": "cepal",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "CENIA",
+   "alias": "cenia",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "CONPES",
+   "alias": "conpes",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "CONPES 4144",
+   "alias": "conpes cuarenta y uno cuarenta y cuatro",
+   "note": "local reading of the document number; to confirm by ear"
+  },
+  {
+   "term": "Ley 1581",
+   "alias": "ley quince ochenta y uno",
+   "note": "local reading; to confirm by ear"
+  },
+  {
+   "term": "Circular Externa 002 de 2024",
+   "alias": "circular externa cero cero dos de dos mil veinticuatro",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "proyecto de ley 025 de 2026",
+   "alias": "proyecto de ley cero veinticinco de dos mil veintiséis",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "RAISE",
+   "alias": "reis",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "PRISMA",
+   "alias": "prisma",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "JBI",
+   "alias": "jota be i",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "OSF",
+   "alias": "o ese efe",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "MASAI",
+   "alias": "masái",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "BERT",
+   "alias": "bert",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "BETO",
+   "alias": "beto",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "RAM",
+   "alias": "ram",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "GB",
+   "alias": "gigabytes",
+   "note": "after a number; to confirm by ear"
+  },
+  {
+   "term": "TWh",
+   "alias": "teravatios hora",
+   "note": "after a number; to confirm by ear"
+  },
+  {
+   "term": "R o Python",
+   "alias": "ere o páiton",
+   "note": "only in «R o Python»; to confirm by ear"
+  },
+  {
+   "term": "Python",
+   "alias": "páiton",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "AGENTS.md",
+   "alias": "éiyents punto eme de",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "SKILL.md",
+   "alias": "skil punto eme de",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Agent Skills",
+   "alias": "éiyent skils",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "LEEME",
+   "alias": "léeme",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "lab-ia",
+   "alias": "lab i a",
+   "note": "folder name; to confirm by ear"
+  },
+  {
+   "term": "ficha-articulo",
+   "alias": "ficha artículo",
+   "note": "skill name, written without the accent; to confirm by ear"
+  },
+  {
+   "term": "analisis",
+   "alias": "análisis",
+   "note": "folder name, written without the accent; to confirm by ear"
+  },
+  {
+   "term": "GPT",
+   "alias": "ge pe te",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "GPT-2",
+   "alias": "ge pe te dos",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "GPT-3.5",
+   "alias": "ge pe te tres punto cinco",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "GPT-4",
+   "alias": "ge pe te cuatro",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "ChatGPT",
+   "alias": "chat ge pe te",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "ChatGPT Plus",
+   "alias": "chat ge pe te plas",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Claude",
+   "alias": "clod",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Claude Code",
+   "alias": "clod coud",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Code",
+   "alias": "coud",
+   "note": "only in «la pestaña Code»; whole word, after the entries «Claude Code» and «Codex»; to confirm by ear"
+  },
+  {
+   "term": "Claude Pro",
+   "alias": "clod pro",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Codex",
+   "alias": "códex",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Gemini",
+   "alias": "yémini",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Gemini Notebook",
+   "alias": "yémini nóutbuk",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Google",
+   "alias": "gúgol",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Google DeepMind",
+   "alias": "gúgol dip máind",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Google Scholar Labs",
+   "alias": "gúgol escólar labs",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "OpenAI",
+   "alias": "open ei ai",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Anthropic",
+   "alias": "antrópic",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "OpenCode",
+   "alias": "open coud",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "OpenCode Go",
+   "alias": "open coud gou",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Antigravity",
+   "alias": "antigráviti",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Asta",
+   "alias": "asta",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Asta DataVoyager",
+   "alias": "asta data vóyayer",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Consensus",
+   "alias": "consénsus",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Elicit",
+   "alias": "elísit",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Undermind",
+   "alias": "ánder máind",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Connected Papers",
+   "alias": "conécted péipers",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "ResearchRabbit",
+   "alias": "ríserch rábit",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Semantic Scholar",
+   "alias": "semántic escólar",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "OpenAlex",
+   "alias": "open álex",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Web of Science",
+   "alias": "uéb of sáiens",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "SciELO",
+   "alias": "sielo",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Redalyc",
+   "alias": "redalic",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Scopus",
+   "alias": "scopus",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Zotero",
+   "alias": "zotero",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "LM Studio",
+   "alias": "ele eme estudio",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Ollama",
+   "alias": "olama",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "cloud",
+   "alias": "cláud",
+   "note": "the Ollama model tag; to confirm by ear"
+  },
+  {
+   "term": "GitHub Copilot",
+   "alias": "guit jab copáilot",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Brave",
+   "alias": "bréiv",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Comet",
+   "alias": "cómet",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Replit",
+   "alias": "réplit",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "DeepSeek",
+   "alias": "dip sic",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Llama",
+   "alias": "lama",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Llama 3.1 70B",
+   "alias": "lama tres punto uno setenta be",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Latam-GPT",
+   "alias": "látam ge pe te",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "AlphaEarth Foundations",
+   "alias": "alfa erz faundéishons",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "AlphaFold",
+   "alias": "alfa fold",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "GraphCast",
+   "alias": "graf cast",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Transformer",
+   "alias": "transfórmer",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "word2vec",
+   "alias": "uord tu vec",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "ELIZA",
+   "alias": "elisa",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "AI Index",
+   "alias": "ei ai índex",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Artificial Analysis",
+   "alias": "artifíshal análisis",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "PubMed Central",
+   "alias": "pab med céntral",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Weizenbaum",
+   "alias": "váisenbaum",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Turing",
+   "alias": "túring",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Mullainathan",
+   "alias": "mulainátan",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Spiess",
+   "alias": "spis",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Athey",
+   "alias": "ázi",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Imbens",
+   "alias": "ímbens",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Zaharia",
+   "alias": "zajaría",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Zou",
+   "alias": "zou",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Petrov",
+   "alias": "pétrov",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Liu",
+   "alias": "liu",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Garg",
+   "alias": "garg",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Caliskan",
+   "alias": "cáliskan",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Jain",
+   "alias": "yéin",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Wallace",
+   "alias": "uólas",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Sclar",
+   "alias": "esclar",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Noy",
+   "alias": "noi",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Zhang",
+   "alias": "chang",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Brynjolfsson",
+   "alias": "brínyolfson",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Jean",
+   "alias": "yin",
+   "note": "English reading of the surname; to confirm by ear"
+  },
+  {
+   "term": "Gilardi",
+   "alias": "guilardi",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Ziems",
+   "alias": "zims",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Bisbee",
+   "alias": "bísbi",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Walters",
+   "alias": "uólters",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Wilder",
+   "alias": "uáilder",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Gallegos",
+   "alias": "gallegos",
+   "note": "Spanish surname; to confirm by ear"
+  },
+  {
+   "term": "Sharma",
+   "alias": "sharma",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Bertrand",
+   "alias": "bertrán",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Arditi",
+   "alias": "arditi",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Wang",
+   "alias": "uang",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Hao",
+   "alias": "jao",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Krippendorff",
+   "alias": "krípendorf",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Cohen",
+   "alias": "cóuen",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Cochrane",
+   "alias": "cócran",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Campbell",
+   "alias": "cámbel",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "Collaboration for Environmental Evidence",
+   "alias": "colaboréishon for envaironméntal évidens",
+   "note": "to confirm by ear"
+  },
+  {
+   "term": "The capital of Colombia is",
+   "alias": "de cápital of colómbia is",
+   "note": "quoted English phrase; to confirm by ear"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+  "engine": "azure",
+  "tier": "F0",
+  "regionEnv": "AZURE_SPEECH_REGION",
+  "keyEnv": "AZURE_SPEECH_KEY",
+  "outputFormat": "Riff24Khz16BitMonoPcm",
+  "rateLimit": {
+    "requests": 18,
+    "perSeconds": 60,
+    "concurrency": 1
+  },
+  "monthlyBudgetChars": 500000,
+  "warnAtShare": 0.8,
+  "loudness": {
+    "integratedLufs": -16,
+    "truePeakDb": -1.5
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-MX-JorgeNeural",
+      "locale": "es-MX",
+      "rate": "-2%",
+      "pitch": "0%",
+      "wordsPerSecond": 2.4,
+      "alternatives": []
+    },
+    "mariana": {
+      "voice": "es-CO-SalomeNeural",
+      "locale": "es-CO",
+      "rate": "0%",
+      "pitch": "0%",
+      "wordsPerSecond": 2.4,
+      "alternatives": [
+        "es-MX-NuriaNeural"
+      ]
+    },
+    "julian": {
+      "voice": "es-CO-GonzaloNeural",
+      "locale": "es-CO",
+      "rate": "-2%",
+      "pitch": "0%",
+      "wordsPerSecond": 2.4,
+      "alternatives": [
+        "es-MX-GerardoNeural"
+      ]
+    },
+    "amparo": {
+      "voice": "es-MX-DaliaNeural",
+      "locale": "es-MX",
+      "rate": "-2%",
+      "pitch": "-3%",
+      "wordsPerSecond": 2.4,
+      "alternatives": [
+        "es-AR-ElenaNeural"
+      ]
+    },
+    "rojas": {
+      "voice": "es-EC-AndreaNeural",
+      "locale": "es-EC",
+      "rate": "-4%",
+      "pitch": "-4%",
+      "wordsPerSecond": 2.4,
+      "alternatives": [
+        "es-AR-ElenaNeural"
+      ]
+    },
+    "tomas": {
+      "voice": "es-PE-AlexNeural",
+      "locale": "es-PE",
+      "rate": "2%",
+      "pitch": "0%",
+      "wordsPerSecond": 2.4,
+      "alternatives": [
+        "es-MX-GerardoNeural"
+      ]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+/* STYLE · Miró — the page treatment (style S10).
+   Cream lienzo with grain; a few floating signs drawn once at load (js/style/page.js) and reused as
+   CSS backgrounds; cards with a flat biomorphic color shape peeking from one corner; brush dividers;
+   focus as a 3 px ink outline with a 2 px yellow inner ring. */
+body {
+  background-color: var(--ground);
+  background-image: var(--paper-grain, none);
+  background-size: 480px 480px;
+}
+.site-header { background-color: var(--ground); background-image: var(--paper-grain, none); background-size: 480px 480px; }
+main.view { background-image: var(--page-signs, none); background-repeat: no-repeat; background-position: right 8px top 18px; background-size: 260px auto; }
+.view-clase, .view-session { background-image: none; }
+
+/* focus (visible on every ground) */
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+  box-shadow: inset 0 0 0 2px var(--accent-2), 0 0 0 5px var(--accent-2);
+}
+.card-dark :focus-visible, .storage-warning :focus-visible { outline-color: var(--on-dark); }
+
+/* cards: thick, slightly irregular black outline + a flat colored shape behind one corner */
+.card { border-radius: 16px 13px 17px 12px / 13px 17px 12px 16px; }
+.card::before {
+  content: "";
+  position: absolute; z-index: -1;
+  right: -16px; top: -14px; width: 92px; height: 70px;
+  background-image: var(--blob-1, none); background-size: contain; background-repeat: no-repeat;
+}
+.card.accent-2::before { background-image: var(--blob-2, none); }
+.card.accent-3::before { background-image: var(--blob-3, none); }
+.card.no-blob::before, .card-dark::before, .player-overlay .card::before, .glos-pop .card::before { display: none; }
+.card, .fig-card, .game-item { isolation: auto; }
+.grid > .card, .fig-grid > .card, .stack > .card { position: relative; z-index: 0; }
+.impl-card.slot-1 { border-left-color: var(--legend-1); }
+.impl-card.slot-2 { border-left-color: var(--legend-2); }
+.impl-card.slot-3 { border-left-color: var(--legend-3); }
+.impl-card.slot-4 { border-left-color: var(--legend-4); }
+.impl-card.slot-5 { border-left-color: var(--legend-5); }
+.impl-card.slot-6 { border-left-color: var(--legend-6); }
+
+/* brush divider */
+.divider { background-image: var(--divider, none); }
+.divider.spiral { background-image: var(--divider-spiral, var(--divider, none)); }
+h2.brush { padding-bottom: 14px; background-image: var(--underline, none); background-repeat: no-repeat; background-position: left bottom; background-size: 220px 14px; }
+
+/* buttons and chips keep the ink line; the primary is an ink field */
+.btn-primary:hover { background: var(--ink); }
+.btn:active, .chip:active { transform: translateY(1px); }
+.mark-correct { background-image: var(--mark-correct, none); }
+.mark-retry { background-image: var(--mark-retry, none); }
+.mark-misreading { background-image: var(--mark-misreading, none); }
+
+/* stamp: uneven ink */
+.stamp { border-style: solid; box-shadow: none; background-image: var(--stamp-ring, none); background-size: 100% 100%; border-color: transparent; outline-color: transparent; }
+
+/* hero and session numbers */
+.session-num { color: var(--ink); }
+.brand-mark { background-image: var(--brand-mark, none); background-size: contain; background-repeat: no-repeat; }
+
+/* margin notes: body face, a small sign and a brush underline */
+.margin-note span.u { background-image: var(--underline, none); background-repeat: no-repeat; background-position: left bottom; background-size: 100% 8px; padding-bottom: 4px; }
+
+/* corrections: alert only with words */
+.no-uses { border-color: var(--alert); }
+
+/* print look (style S10): black on white, no washes, grain or color fields */
+@media print {
+  :root { --ground: #FFFFFF; --ground-2: #FFFFFF; --ink: #000000; --ink-soft: #000000; }
+  body, .site-header, main.view { background-image: none !important; }
+}

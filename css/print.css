@@ -1,0 +1,36 @@
+/* Printable materials (base §6, spec §9.3): letter size, black on white; signs, patterns and labels
+   carry every meaning. Videos, navigation and games are hidden. */
+@media print {
+  @page { size: letter; margin: 16mm 14mm; }
+  body, .site-header, main.view { background: var(--ground) !important; background-image: none !important; color: var(--ink); font-size: 11pt; }
+  .site-header, .site-nav, .nav-toggle, .skip-link, .storage-warning, .player, .no-print,
+  .game-items, .widget-game, .clase-deck, .btn, .tabs, .player-chapters, .hero canvas, .glos-pop { display: none !important; }
+  .card, details, .copy-box, .table-wrap, .fig-card { break-inside: avoid; border-color: var(--ink); box-shadow: none; }
+  .card::before { display: none !important; }
+  details { border: 1px solid var(--ink); }
+  details > summary { list-style: none; }
+  details:not([open]) > * { display: block; }
+  a { color: var(--ink); text-decoration: underline; }
+  a.ext::after { content: " (" attr(href) ")"; font-size: 9pt; word-break: break-all; }
+  .legend-swatch { background: var(--ground) !important; border: 2px solid var(--ink); }
+  .legend-swatch::after { display: none; }
+  .divider { background-image: none !important; border-top: 1.5px solid var(--ink); height: 0; }
+  .site-footer { border-top: 1px solid var(--ink); font-size: 9pt; }
+  h1 { font-size: 22pt; } h2 { font-size: 16pt; break-after: avoid; } h3 { font-size: 13pt; break-after: avoid; }
+  .print-break { break-before: page; }
+  main.view { max-width: none; padding: 0; }
+  textarea, input { border: 1px solid var(--ink); }
+  .print-only { display: block !important; }
+}
+.print-only { display: none; }
+@media print {
+  body.print-one main.view > *:not(.print-target):not(:has(.print-target)) { display: none !important; }
+  body.print-one .print-target ~ *, body.print-one .section > *:not(.print-target):not(:has(.print-target)) { display: none !important; }
+  .wb-section { break-before: page; }
+  .wb-section textarea, .wb-section input[type="text"], .wb-section select { display: none; }
+  .clase-start, .clase-side, .clase-deck .deck-nav { display: none !important; }
+}
+@media print {
+  .glos-chip { border: 0; padding: 0; min-height: 0; font-weight: inherit; font-size: inherit; display: inline; }
+  .toc, .player-figs, .player-transcript { display: none !important; }
+}

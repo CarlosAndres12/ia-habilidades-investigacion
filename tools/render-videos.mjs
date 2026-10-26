@@ -1,0 +1,76 @@
+// Optional MP4 export (base §7 step 7): headless Chromium renders every frame at 24 fps through
+// renderFrame(t) in linear mode; JPEG frames stream through a pipe into ffmpeg (no thousands of files on
+// disk); each chapter becomes a part file, so an interrupted export resumes where it stopped; the parts
+// are joined and muxed with the narration (assets/audio/<id>.mp3, if it exists) into
+// assets/video/<slug>.mp4 (H.264 yuv420p + AAC, +faststart), and assets/video/index.js is updated.
+//   node tools/render-videos.mjs --only v1 [--fps 24] [--force]
+import fs from 'node:fs';
+import path from 'node:path';
+import { spawn, execFileSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
+import { launchBrowser } from './lib/browser.mjs';
+import { ROOT, loadData } from './lib/load-data.mjs';
+
+const args = process.argv.slice(2);
+const val = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
+const FPS = Number(val('--fps') || 24);
+const FRAME_TIMEOUT = 5 * 60 * 1000;
+const D = loadData({ engine: false }).data;
+const videos = (D.videos || []).filter((v) => !val('--only') || v.id === val('--only'));
+const OUT = path.join(ROOT, 'assets', 'video');
+const PARTS = path.join(OUT, '.parts');
+fs.mkdirSync(PARTS, { recursive: true });
+
+function encodePart(file) {
+  const ff = spawn('ffmpeg', ['-v', 'error', '-y', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
+    // JPEG frames are full range (yuvj420p): convert to limited-range yuv420p, which every player expects
+    '-vf', 'scale=in_range=full:out_range=limited,format=yuv420p',
+    '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-color_range', 'tv', '-r', String(FPS), file], { stdio: ['pipe', 'inherit', 'inherit'] });
+  const done = new Promise((res, rej) => ff.on('exit', (c) => (c === 0 ? res() : rej(new Error('ffmpeg terminó con código ' + c)))));
+  return { write: (buf) => new Promise((res) => (ff.stdin.write(buf) ? res() : ff.stdin.once('drain', res))), end: async () => { ff.stdin.end(); await done; } };
+}
+
+const b = await launchBrowser({ width: 1280, height: 720, timeout: 6 * 60 * 60 * 1000 });
+try {
+  for (const v of videos) {
+    await b.open(pathToFileURL(path.join(ROOT, 'index.html')).href + '?render=' + v.id);
+    for (let i = 0; i < 100 && !(await b.evaluate('!!window.renderReady')); i++) await new Promise((r) => setTimeout(r, 50));
+    const duration = await b.evaluate('window.videoDuration');
+    const chapters = await b.evaluate('window.videoChapters');
+    const parts = [];
+    for (let k = 0; k < chapters.length; k++) {
+      const ch = chapters[k];
+      const file = path.join(PARTS, `${v.id}-${String(k).padStart(2, '0')}.mp4`);
+      parts.push(file);
+      if (fs.existsSync(file) && !args.includes('--force')) { console.log(`${v.id} · capítulo ${k + 1}: ya estaba`); continue; }
+      const enc = encodePart(file + '.tmp.mp4');
+      const n0 = Math.round(ch.start * FPS), n1 = Math.round(ch.end * FPS);
+      for (let n = n0; n < n1; n++) {
+        // a long batch job: allow a busy machine up to 5 minutes per frame before giving up
+        const data = await b.evaluate(`(window.renderFrame(${(n / FPS).toFixed(4)}, { subtitles: true }), document.querySelector('canvas').toDataURL('image/jpeg', 0.92))`, FRAME_TIMEOUT);
+        await enc.write(Buffer.from(data.split(',')[1], 'base64'));
+        if ((n - n0) % (FPS * 10) === 0) process.stdout.write(`\r${v.id} · capítulo ${k + 1}/${chapters.length} · ${Math.round(((n - n0) / (n1 - n0)) * 100)} %   `);
+      }
+      await enc.end();
+      fs.renameSync(file + '.tmp.mp4', file);
+      process.stdout.write(`\r${v.id} · capítulo ${k + 1}/${chapters.length} · listo        \n`);
+    }
+    const list = path.join(PARTS, v.id + '.txt');
+    fs.writeFileSync(list, parts.map((f) => `file '${f}'`).join('\n'));
+    const silent = path.join(PARTS, v.id + '-video.mp4');
+    execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', silent]);
+    const mp3 = path.join(ROOT, 'assets', 'audio', v.id + '.mp3');
+    const out = path.join(OUT, v.slug + '.mp4');
+    const audioArgs = fs.existsSync(mp3) ? ['-i', mp3, '-c:a', 'aac', '-b:a', '160k', '-shortest'] : ['-an'];
+    execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', silent].concat(audioArgs.slice(0, 2)).concat(['-c:v', 'copy']).concat(audioArgs.slice(2)).concat(['-movflags', '+faststart', '-t', String(duration), out]));
+    console.log(`${v.id} → ${path.relative(ROOT, out)}${fs.existsSync(mp3) ? '' : ' (sin narración: genere primero las voces)'}`);
+    // index for the player («Descargar MP4»)
+    const idxFile = path.join(OUT, 'index.js');
+    let index = {};
+    try { const m = fs.readFileSync(idxFile, 'utf8').match(/videoIndex = (\{[\s\S]*\});/); if (m) index = JSON.parse(m[1]); } catch { /* new index */ }
+    index[v.id] = { file: v.slug + '.mp4' };
+    fs.writeFileSync(idxFile, '/* GENERATED by tools/render-videos.mjs. Never edit by hand. */\nwindow.IAHI = window.IAHI || {};\nwindow.IAHI.videoIndex = ' + JSON.stringify(index) + ';\n');
+  }
+} finally {
+  await b.close();
+}

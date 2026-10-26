@@ -1,0 +1,5 @@
+tools/.env
+tools/.cache/
+tools/node_modules/
+review/
+assets/video/.parts/
